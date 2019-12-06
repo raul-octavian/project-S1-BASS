@@ -101,13 +101,14 @@ main form textarea {
   border: 1px solid #D6A1A1;
   border-radius: 2vh;
   margin: 2vh;
+  outline: none;
 }
 main form input[type=text]:focus,
+main form input[type=email]:focus,
 main form textarea:focus {
   box-shadow: 0 0 2px #79246C;
-  padding: 3px 0px 3px 3px;
-  margin: 5px 1px 3px 0px;
-  border: 1px solid #79246C;
+  border: 2px solid #79246C;
+  padding: 10px 10px;
 }
 main form input[type=submit] {
   background-color: #FFEEDD;

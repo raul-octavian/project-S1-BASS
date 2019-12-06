@@ -95,13 +95,15 @@ main form textarea {
   box-sizing: border-box;
   padding: 5px 10px;
   border: 1px solid #D6A1A1;
+  outline: none;
 }
 main form input[type=text]:focus,
+main form input[type=email]:focus,
 main form textarea:focus {
   box-shadow: 0 0 2px #79246C;
-  padding: 3px 0px 3px 3px;
+  padding: 5px 0px 5px 5px;
   margin: 5px 1px 3px 0px;
-  border: 1px solid #79246C;
+  border: 2px solid #79246C;
 }
 main form label {
   flex-grow: 1;

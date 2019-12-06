@@ -197,9 +197,16 @@ body {
 main {
   background: url("../assets/background-1.png");
   width: 100vw;
-  height: 80vh;
   background-position: -5px -5px;
   
+}
+
+footer {
+  background-color: $footer-bc;
+  height: 35vh;
+  width: 100vw;
+  z-index: 0;
+  position: relative;
 }
 
 

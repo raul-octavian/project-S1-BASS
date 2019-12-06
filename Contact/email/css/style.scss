@@ -68,14 +68,16 @@ main {
       box-sizing: border-box;
       padding: 5px 10px;
       border: 1px solid $card-bc;
+      outline: none;
     }
 
     input[type="text"]:focus,
+    input[type="email"]:focus,
     textarea:focus {
       box-shadow: 0 0 2px $contact-bc;
-      padding: 3px 0px 3px 3px;
+      padding: 5px 0px 5px 5px;
       margin: 5px 1px 3px 0px;
-      border: 1px solid $contact-bc;
+      border: 2px solid $contact-bc;
     }
 
     label {

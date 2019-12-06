@@ -1,0 +1,121 @@
+@keyframes slide-in-br {
+  0% {
+    transform: translateY(1000px) translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  overflow: initial;
+  padding: 15vh 0;
+  height: auto;
+  z-index: 0;
+}
+main #top-meet {
+  width: 100vw;
+}
+main #top-meet .icon {
+  margin: 2vh auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main #top-meet .icon .meet-icon {
+  height: 10vh;
+  margin: 0 auto;
+}
+main #top-meet .icon .meet-icon .cls-1 {
+  fill: none;
+}
+main #top-meet .icon .meet-icon .cls-1,
+main #top-meet .icon .meet-icon .cls-2 {
+  stroke: #ffeede;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+main #top-meet .icon .meet-icon .cls-2 {
+  fill: #ffeede;
+}
+main #top-meet h1 {
+  font-size: 4rem;
+  font-weight: 200;
+  text-align: center;
+  color: #FFEEDD;
+  width: 90%;
+  margin: 0 auto;
+}
+main .ornament {
+  border: 1px solid #FFEEDD;
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 5vh;
+}
+
+#bottom-meet {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin-top: 10vh;
+}
+#bottom-meet iframe {
+  width: 50vw;
+  height: 30vw;
+  margin: 0 2vw 0 0;
+}
+#bottom-meet #info-meet {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 30vw;
+}
+#bottom-meet #info-meet h4 {
+  margin-top: 1vh;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+#bottom-meet #info-meet p {
+  font-size: 0.7rem;
+  text-align: center;
+}
+#bottom-meet #info-meet #schedule-meet {
+  width: 100%;
+}
+#bottom-meet #info-meet #phone-meet {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
