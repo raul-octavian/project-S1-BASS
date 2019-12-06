@@ -1,0 +1,95 @@
+@import "../../../mixins";
+
+main {
+  @include flex(column, nowrap, space-around, center, center);
+  overflow: initial;
+  padding: 15vh 0;
+
+  #top-faq {
+    width: 100vw;
+
+    .icon {
+      margin: 2vh auto;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .faq-icon {
+        height: 10vh;
+        margin: 0 auto;
+
+        .cls-1 {
+          fill: none;
+          stroke: #ffeede;
+          stroke-miterlimit: 10;
+          stroke-width: 3px;
+        }
+      }
+    }
+
+    h1 {
+      font-size: $large;
+      font-weight: 200;
+      text-align: center;
+      color: $card-border;
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  .ornament {
+    border: 1px solid $card-border;
+    width: 70vw;
+    margin: 0 auto;
+    margin-top: 5vh;
+  }
+
+  #bottom-faq {
+    width: 100vw;
+    @include flex( column, nowrap, flex-start, center, center );
+
+    h2 {
+        margin-top: 5vh;
+        color: $card-border;
+        
+    }
+  }
+
+  form {
+    width: 60%;
+    margin: 5vh auto;
+    @include flex(column, nowrap, flex-start, center, center);
+
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 60%;
+      box-sizing: border-box;
+      padding: 10px 10px;
+      border: 1px solid $card-bc;
+      border-radius: 2vh;
+      margin: 2vh;
+    }
+
+    input[type="text"]:focus,
+    textarea:focus {
+      box-shadow: 0 0 2px $contact-bc;
+      padding: 3px 0px 3px 3px;
+      margin: 5px 1px 3px 0px;
+      border: 1px solid $contact-bc;
+    }
+
+    input[type="submit"] {
+      background-color: $card-border;
+      columns: $btn-bc;
+      padding: 1vh 3vw;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 1vh auto;
+
+    }
+  }
+}

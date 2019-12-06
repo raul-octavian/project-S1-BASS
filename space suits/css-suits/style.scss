@@ -1,0 +1,122 @@
+@import "../../mixins.scss";
+
+main {
+  z-index: 2;
+  overflow: hidden;
+}
+#container {
+  @include flex(column, nowrap, space-around, center, center);
+  width: 100vw;
+  margin: 0 auto;
+  height: 80vh;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  article {
+    @include flex(row, nowrap, center, flex-end, flex-end);
+    margin-bottom: -18%;
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+
+    a {
+      text-decoration: none;
+      color: $footer-bc;
+
+      &:hover {
+        color: $footer-bc;
+      }
+    }
+  }
+}
+
+.card {
+  @include flex(row, nowrap, space-between, flex-start, space-between);
+
+  background-color: $card-bc;
+  @include card-border;
+  border-radius: 3vw;
+  padding: 1vw;
+  box-sizing: border-box;
+  height: 32vw;
+  width: 18vw;
+  box-sizing: border-box;
+
+  img {
+    width: 70%;
+    align-self: center;
+  }
+
+  .acronims {
+    padding: 0;
+    height: 30%;
+
+    p {
+      margin: 2px;
+    }
+  }
+}
+
+.top-left {
+  @include flex(column, nowrap, flex-start, flex-start, flex-start);
+  align-self: flex-start;
+}
+
+.bottom-right {
+  @include flex(column, nowrap, flex-end, flex-end, flex-end);
+  align-self: flex-end;
+}
+
+#card-one {
+  transform: rotatez(-10deg);
+  margin-bottom: -4%;
+  transition: all ease-in-out 0.3s;
+
+  &:hover {
+    margin-bottom: 0;
+    margin-top: -2%;
+  }
+}
+
+#card-two {
+  transform: rotatez(-4deg);
+  margin-bottom: -2%;
+  margin-left: -2%;
+  transition: all ease-in-out 0.3s;
+
+  &:hover {
+    margin-bottom: 0;
+    margin-top: -15px;
+  }
+}
+#card-three {
+  transform: rotatez(4deg);
+  margin-bottom: -2%;
+  margin-left: -2%;
+  transition: all ease-in-out 0.3s;
+
+  &:hover {
+    margin-bottom: 0;
+     margin-top: -15px;
+  }
+}
+#card-four {
+  transform: rotatez(10deg);
+  margin-bottom: -4%;
+  margin-left: -4%;
+  transition: all ease-in-out 0.3s;
+
+  &:hover {
+    margin-bottom: 0;
+    margin-top: -2%;
+  }
+}
+
+footer {
+  background-color: $footer-bc;
+  height: 35vh;
+  width: 100vw;
+  z-index: 10;
+}

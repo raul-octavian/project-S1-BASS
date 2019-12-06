@@ -1,0 +1,122 @@
+@keyframes slide-in-br {
+  0% {
+    transform: translateY(1000px) translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  overflow: initial;
+  padding: 15vh 0;
+}
+main #top-faq {
+  width: 100vw;
+}
+main #top-faq .icon {
+  margin: 2vh auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main #top-faq .icon .faq-icon {
+  height: 10vh;
+  margin: 0 auto;
+}
+main #top-faq .icon .faq-icon .cls-1 {
+  fill: none;
+  stroke: #ffeede;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+}
+main #top-faq h1 {
+  font-size: 4rem;
+  font-weight: 200;
+  text-align: center;
+  color: #FFEEDD;
+  width: 90%;
+  margin: 0 auto;
+}
+main .ornament {
+  border: 1px solid #FFEEDD;
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 5vh;
+}
+main #bottom-faq {
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+main #bottom-faq h2 {
+  margin-top: 5vh;
+  color: #FFEEDD;
+}
+main form {
+  width: 60%;
+  margin: 5vh auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+main form input[type=text],
+main form input[type=email],
+main form textarea {
+  width: 60%;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  border: 1px solid #D6A1A1;
+  border-radius: 2vh;
+  margin: 2vh;
+}
+main form input[type=text]:focus,
+main form textarea:focus {
+  box-shadow: 0 0 2px #79246C;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #79246C;
+}
+main form input[type=submit] {
+  background-color: #FFEEDD;
+  columns: #bb6611;
+  padding: 1vh 3vw;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 1vh auto;
+}
+
+/*# sourceMappingURL=style.css.map */

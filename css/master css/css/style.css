@@ -1,0 +1,120 @@
+@keyframes slide-in-br {
+  0% {
+    transform: translateY(1000px) translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+#container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: center;
+  width: 100vw;
+  margin: 0 auto;
+  height: 80vh;
+}
+#container section {
+  width: 7vw;
+  align-self: center;
+}
+
+.control-left {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 50%;
+  margin-top: 3vw;
+}
+
+.back-arrow {
+  clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+  background-color: #D6A1A1;
+  height: 1.5vw;
+  width: 3vw;
+}
+.back-arrow:hover {
+  background-color: #bb6611;
+}
+
+.right-arrow {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  background-color: #D6A1A1;
+  height: 1.5vw;
+  width: 3vw;
+  align-self: center;
+}
+.right-arrow:hover {
+  background-color: #bb6611;
+}
+
+#forward {
+  align-self: center;
+}
+
+.left-arrow {
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  background-color: #D6A1A1;
+  height: 1.5vw;
+  width: 3vw;
+}
+.left-arrow:hover {
+  background-color: #bb6611;
+}
+
+.card-suit {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: space-between;
+  height: 38vw;
+  width: 21vw;
+  background-color: #D6A1A1;
+  border: 5px solid #FFEEDD;
+  border-radius: 3vw;
+  padding: 1vw;
+  box-sizing: border-box;
+  align-self: center;
+  animation: slide-in-br 1.5s 1;
+}
+
+#card-left {
+  animation: slide-in-br 1.5s 1;
+}
+
+#card-right {
+  animation: slide-in-right 3s 1;
+}
+
+#text-suit, .back-arrow, .left-arrow, .right-arrow {
+  animation: text-focus-in 4s 1;
+}
+
+/*# sourceMappingURL=style.css.map */

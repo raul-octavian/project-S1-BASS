@@ -1,0 +1,70 @@
+
+$card-bc: #D6A1A1;
+$card-border: #FFEEDD;
+$footer-bc: #112242;
+$btn-bc: #bb6611;
+$contact-bc: #79246C;
+
+
+//font  
+
+$large: 4rem;
+
+
+@mixin flex ($direction, $whrap, $justify-content, $align-items, $align-content) {
+
+    display: flex;
+    flex-flow: $direction $whrap;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    align-content: $align-content;
+    
+}
+
+
+@mixin no-decoration-ul($none) {
+    list-style-type: $none;
+}
+
+@mixin no-decoration($none) {
+    text-decoration: $none;
+}
+
+@mixin card-border {
+    border: 5px solid $card-border; 
+}
+
+@keyframes slide-in-br {
+  0% {
+    transform: translateY(1000px) translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+

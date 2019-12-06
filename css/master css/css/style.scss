@@ -1,0 +1,92 @@
+@import "../../../mixins";
+
+
+
+#container {
+    @include flex (row, nowrap, space-around, flex-start, center); 
+     width: 100vw;
+    margin: 0 auto;
+    height: 80vh;
+
+    section {
+        width: 7vw;
+        align-self: center;
+    }
+}
+
+.control-left {
+    @include flex (column, nowrap, space-between, center, center);
+    height: 50%;
+    margin-top: 3vw;    
+}
+
+.back-arrow {
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    background-color: $card-bc;
+    height: 1.5vw;
+    width: 3vw;
+
+    &:hover {
+        background-color: $btn-bc;
+    }
+    
+}
+
+.right-arrow {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    background-color: $card-bc;
+    height: 1.5vw;
+    width: 3vw;
+    align-self: center;
+
+      &:hover {
+        background-color: $btn-bc;
+    }
+   
+
+}
+
+#forward {
+    align-self: center;
+}
+
+.left-arrow {
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    background-color: $card-bc;
+    height: 1.5vw;
+    width: 3vw;
+
+      &:hover {
+        background-color: $btn-bc;
+    }
+
+}
+
+.card-suit {
+    @include flex(row, nowrap, space-between, flex-start, space-between);
+    height: 38vw;
+    width: 21vw;
+    background-color: $card-bc;
+    @include card-border;
+    border-radius: 3vw;
+    padding: 1vw;
+    box-sizing: border-box;
+    align-self: center;
+    animation: slide-in-br 1.5s 1;
+}
+
+#card-left {
+    animation: slide-in-br 1.5s 1;
+}
+
+#card-right {
+    animation: slide-in-right 3s 1;
+}
+
+#text-suit, .back-arrow, .left-arrow, .right-arrow {
+    animation: text-focus-in 4s 1;
+}
+
+
+
+
