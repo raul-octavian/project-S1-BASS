@@ -1,92 +1,431 @@
 @import "../../../mixins";
 
-
+main {
+  padding: 10vh 0;
+  overflow: inherit;
+  height: auto;
+}
 
 #container {
-    @include flex (row, nowrap, space-around, flex-start, center); 
-     width: 100vw;
-    margin: 0 auto;
-    height: 80vh;
+  @include flex(row, nowrap, space-around, flex-start, center);
+  width: 100vw;
+  margin: 0 auto;
+  height: 80vh;
 
-    section {
-        width: 7vw;
-        align-self: center;
-    }
+  section {
+    align-self: center;
+  }
 }
 
 .control-left {
-    @include flex (column, nowrap, space-between, center, center);
-    height: 50%;
-    margin-top: 3vw;    
+  @include flex(column, nowrap, space-between, center, center);
+  height: 50%;
+  margin-top: 3vw;
 }
 
 .back-arrow {
-    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
-    background-color: $card-bc;
-    height: 1.5vw;
-    width: 3vw;
+  clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+  background-color: $card-bc;
+  height: 1.5vw;
+  width: 3vw;
 
-    &:hover {
-        background-color: $btn-bc;
-    }
-    
+  &:hover {
+    background-color: $btn-bc;
+  }
 }
 
 .right-arrow {
-    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-    background-color: $card-bc;
-    height: 1.5vw;
-    width: 3vw;
-    align-self: center;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  background-color: $card-bc;
+  height: 1.5vw;
+  width: 3vw;
+  align-self: center;
 
-      &:hover {
-        background-color: $btn-bc;
-    }
-   
-
+  &:hover {
+    background-color: $btn-bc;
+  }
 }
 
 #forward {
-    align-self: center;
+  align-self: center;
 }
 
 .left-arrow {
-    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-    background-color: $card-bc;
-    height: 1.5vw;
-    width: 3vw;
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  background-color: $card-bc;
+  height: 1.5vw;
+  width: 3vw;
 
-      &:hover {
-        background-color: $btn-bc;
-    }
-
+  &:hover {
+    background-color: $btn-bc;
+  }
 }
 
 .card-suit {
-    @include flex(row, nowrap, space-between, flex-start, space-between);
-    height: 38vw;
-    width: 21vw;
-    background-color: $card-bc;
-    @include card-border;
-    border-radius: 3vw;
-    padding: 1vw;
-    box-sizing: border-box;
-    align-self: center;
-    animation: slide-in-br 1.5s 1;
+  @include flex(row, wrap, space-between, flex-start, space-between);
+  height: 38vw;
+  width: 21vw;
+  background: url("../../../assets/space-card-background.png");
+  background-size: cover;
+  @include card-border;
+  border-radius: 3vw;
+  box-sizing: border-box;
+  align-self: center;
+  animation: slide-in-br 1.5s 1;
 }
 
 #card-left {
-    animation: slide-in-br 1.5s 1;
+  animation: slide-in-br 1.5s 1;
+}
+
+.svg-container {
+  width: 100%;
+  height: 80%;
+
+  .mercury-space-suit {
+    width: 80%;
+    margin-left: 10%;
+    .cls-1 {
+      fill: #e5e4e4;
+    }
+
+    .cls-2 {
+      fill: #1d1d1b;
+    }
+
+    .cls-3 {
+      fill: #d7d7d7;
+    }
+
+    .cls-4 {
+      fill: #788d8e;
+    }
+
+    .cls-5 {
+      fill: #d4ebed;
+    }
+
+    .cls-6 {
+      fill: #afafaf;
+    }
+
+    .cls-7 {
+      fill: #908f90;
+    }
+
+    .cls-8 {
+      fill: #eab957;
+    }
+
+    .cls-9 {
+      fill: #c4c4c4;
+    }
+
+    .cls-10 {
+      fill: #8e4922;
+    }
+
+    .cls-11 {
+      fill: #472515;
+    }
+
+    .cls-12 {
+      fill: #a9a9a9;
+    }
+
+    .cls-13 {
+      fill: #7f7f80;
+    }
+
+    .cls-14 {
+      fill: #5a92ce;
+    }
+
+    .cls-15 {
+      fill: #c0e3e7;
+    }
+
+    .cls-16 {
+      fill: #1955a0;
+    }
+
+    .cls-17 {
+      fill: #a58a5a;
+    }
+
+    .cls-18 {
+      fill: #bcbcbb;
+    }
+
+    .cls-19 {
+      fill: #444;
+    }
+
+    .cls-20 {
+      fill: #777776;
+    }
+
+    .cls-21 {
+      fill: #727272;
+    }
+
+    .cls-22 {
+      fill: #b88e46;
+    }
+
+    .cls-23 {
+      fill: #7c7c7c;
+    }
+
+    .cls-24 {
+      fill: #8b8b8c;
+    }
+
+    .cls-25 {
+      fill: #b7b7b7;
+    }
+
+    .cls-26 {
+      fill: #717070;
+    }
+
+    .cls-27 {
+      fill: #c2c1c1;
+    }
+
+    .cls-28 {
+      fill: #c69152;
+    }
+
+    .cls-29 {
+      fill: #806036;
+    }
+
+    .cls-30 {
+      fill: #888989;
+    }
+
+    .cls-31 {
+      fill: #16355a;
+    }
+
+    .cls-32 {
+      fill: #765922;
+    }
+
+    .cls-33 {
+      fill: #c5a470;
+    }
+
+    .cls-34 {
+      fill: #e5211c;
+    }
+
+    .cls-35 {
+      fill: #413118;
+    }
+
+    .cls-36 {
+      fill: #999;
+    }
+
+    .cls-37 {
+      fill: #bababa;
+    }
+
+    .cls-38 {
+      fill: #9c9b9b;
+    }
+
+    .cls-39 {
+      fill: #676766;
+    }
+
+    .cls-40,
+    .cls-41,
+    .cls-42,
+    .cls-43,
+    .cls-44,
+    .cls-48,
+    .cls-49,
+    .cls-51 {
+      fill: none;
+    }
+
+    .cls-40 {
+      stroke: #7f7f80;
+    }
+
+    .cls-40,
+    .cls-41,
+    .cls-43,
+    .cls-44,
+    .cls-49,
+    .cls-51 {
+      stroke-miterlimit: 10;
+    }
+
+    .cls-40,
+    .cls-41,
+    .cls-42,
+    .cls-43,
+    .cls-44 {
+      stroke-width: 0.5px;
+    }
+
+    .cls-41 {
+      stroke: #1d1d1b;
+    }
+
+    .cls-42 {
+      stroke: #717070;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .cls-43 {
+      stroke: #a8a7a7;
+    }
+
+    .cls-44 {
+      stroke: #727272;
+    }
+
+    .cls-45 {
+      fill: #bfbebe;
+    }
+
+    .cls-46 {
+      fill: #3ebfee;
+      opacity: 0.33;
+    }
+
+    .cls-47,
+    .cls-49 {
+      opacity: 0.15;
+    }
+
+    .cls-49 {
+      stroke: #000;
+    }
+
+    .cls-50 {
+      fill: #fff;
+    }
+
+    .cls-51 {
+      stroke: #9c9b9b;
+    }
+
+    .cls-52 {
+      opacity: 0.59;
+      fill: url(#radial-gradient);
+    }
+  }
+}
+
+.card-botton {
+  background-color: $card-border;
+  border-radius: 2vw;
+  width: 100%;
+
+  p {
+    text-align: center;
+  }
 }
 
 #card-right {
-    animation: slide-in-right 3s 1;
+  animation: slide-in-right 3s 1;
 }
 
-#text-suit, .back-arrow, .left-arrow, .right-arrow {
-    animation: text-focus-in 4s 1;
+.svg-container-parts {
+  width: 100%;
+  height: 100%;
+
+  @include flex(column, nowrap, space-between, center, center);
+  #mercury-helmet {
+    width: 40%;
+    margin-top: 10%;
+  }
+
+  .helmet-icon {
+    .cls-1 {
+      fill: #7c7c7c;
+    }
+
+    .cls-2 {
+      fill: #c69152;
+    }
+
+    .cls-3 {
+      fill: #777776;
+    }
+
+    .cls-4 {
+      fill: #d7d7d7;
+    }
+
+    .cls-5 {
+      fill: #c0e3e7;
+    }
+
+    .cls-6 {
+      fill: #806036;
+    }
+
+    .cls-7 {
+      fill: #888989;
+    }
+
+    .cls-8 {
+      fill: #bfbebe;
+    }
+
+    .cls-9 {
+      fill: #717070;
+    }
+
+    .cls-10 {
+      fill: #3ebfee;
+      opacity: 0.33;
+    }
+
+    .cls-11 {
+      opacity: 0.59;
+      fill: url(#radial-gradient);
+    }
+  }
+
+  .name {
+    width: 100%;
+
+    h3 {
+      color: $card-border;
+      text-align: center;
+    }
+  }
+
+  .text-container {
+      width: 90%;
+      margin: 2% auto;
+      border: 1px solid $card-bc;
+      border-radius: 1vw;
+
+      p {
+          color: $card-border;
+          text-align: center;
+      }
+  }
 }
 
+#text-suit,
+.back-arrow,
+.left-arrow,
+.right-arrow {
+  animation: text-focus-in 4s 1;
+}
 
-
-
+#text-suit {
+  color: $card-border;
+  width: 15vw;
+}
