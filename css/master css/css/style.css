@@ -48,6 +48,18 @@ main {
   align-self: center;
 }
 
+mercury-gloves-hover {
+  fill: red;
+}
+
+.visible {
+  display: flex;
+}
+
+.not-visible {
+  display: none;
+}
+
 .control-left {
   display: flex;
   flex-flow: column nowrap;
@@ -110,17 +122,32 @@ main {
   animation: slide-in-br 1.5s 1;
 }
 
+.card-botton {
+  background-color: #FFEEDD;
+  border-radius: 2vw;
+  width: 100%;
+}
+.card-botton p {
+  text-align: center;
+}
+
 #card-left {
   animation: slide-in-br 1.5s 1;
+}
+
+svg {
+  pointer-events: all;
 }
 
 .svg-container {
   width: 100%;
   height: 80%;
+  position: relative;
 }
 .svg-container .mercury-space-suit {
   width: 80%;
   margin-left: 10%;
+  position: absolute;
 }
 .svg-container .mercury-space-suit .cls-1 {
   fill: #e5e4e4;
@@ -305,14 +332,31 @@ main {
   opacity: 0.59;
   fill: url(#radial-gradient);
 }
-
-.card-botton {
-  background-color: #FFEEDD;
-  border-radius: 2vw;
-  width: 100%;
+.svg-container .mercury-space-suit .mercury-gloves-hover {
+  fill: red;
 }
-.card-botton p {
-  text-align: center;
+.svg-container .mercury-space-suit .mercury-boots-hover {
+  fill: red;
+}
+.svg-container .mercury-space-suit .mercury-tank-hover {
+  fill: red;
+}
+
+#mercury-suit-hoover-elements .helmet {
+  width: 100%;
+  height: 20%;
+}
+#mercury-suit-hoover-elements .gloves {
+  width: 100%;
+  height: 30%;
+}
+#mercury-suit-hoover-elements .boots {
+  width: 70%;
+  height: 50%;
+}
+#mercury-suit-hoover-elements .tank {
+  width: 30%;
+  height: 50%;
 }
 
 #card-right {
@@ -322,13 +366,12 @@ main {
 .svg-container-parts {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   align-content: center;
+  align-items: center;
 }
-.svg-container-parts #mercury-helmet {
+.svg-container-parts .part-container {
   width: 40%;
   margin-top: 10%;
 }
@@ -379,10 +422,39 @@ main {
   margin: 2% auto;
   border: 1px solid #D6A1A1;
   border-radius: 1vw;
+  overflow: hidden;
 }
 .svg-container-parts .text-container p {
   color: #FFEEDD;
   text-align: center;
+}
+
+.gloves-icon .cls-1 {
+  fill: #908f90;
+}
+.gloves-icon .cls-2 {
+  fill: #d7d7d7;
+}
+.gloves-icon .cls-3 {
+  fill: #afafaf;
+}
+.gloves-icon .cls-4 {
+  fill: #c4c4c4;
+}
+.gloves-icon .cls-5,
+.gloves-icon .cls-7 {
+  opacity: 0.15;
+}
+.gloves-icon .cls-6,
+.gloves-icon .cls-7 {
+  fill: none;
+}
+.gloves-icon .cls-7 {
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+.gloves-icon .cls-8 {
+  fill: #8b8b8c;
 }
 
 #text-suit,
