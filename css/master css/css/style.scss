@@ -94,21 +94,19 @@ main {
 }
 
 @media screen and (max-width: 960px) {
-    .card-botton {
-
-        h3 {
-            font-size: 1rem;
-        }
+  .card-botton {
+    h3 {
+      font-size: 1rem;
     }
+  }
 }
 
 @media screen and (max-width: 780px) {
-    .card-botton {
-
-        h3 {
-            font-size: 0.7rem;
-        }
+  .card-botton {
+    h3 {
+      font-size: 0.7rem;
     }
+  }
 }
 
 #card-left {
@@ -123,11 +121,313 @@ svg {
   width: 100%;
   height: 80%;
   position: relative;
+  @include flex (row, nowrap, center, center, center);
+
+
+}
+
+#card-right {
+  animation: slide-in-right 3s 1;
+}
+
+.svg-container-parts {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+
+  .part-container {
+    width: 40%;
+    margin-top: 10%;
+  }
+
+  .helmet-icon {
+    .cls-1 {
+      fill: #7c7c7c;
+    }
+
+    .cls-2 {
+      fill: #c69152;
+    }
+
+    .cls-3 {
+      fill: #777776;
+    }
+
+    .cls-4 {
+      fill: #d7d7d7;
+    }
+
+    .cls-5 {
+      fill: #c0e3e7;
+    }
+
+    .cls-6 {
+      fill: #806036;
+    }
+
+    .cls-7 {
+      fill: #888989;
+    }
+
+    .cls-8 {
+      fill: #bfbebe;
+    }
+
+    .cls-9 {
+      fill: #717070;
+    }
+
+    .cls-10 {
+      fill: #3ebfee;
+      opacity: 0.33;
+    }
+
+    .cls-11 {
+      opacity: 0.59;
+      fill: url(#radial-gradient);
+    }
+  }
+
+  .name {
+    width: 100%;
+
+    h3 {
+      color: $card-border;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  .text-container {
+    width: 90%;
+    margin: 2% auto;
+    border: 1px solid $card-bc;
+    border-radius: 1vw;
+    overflow: hidden;
+
+    h4 {
+      color: $card-border;
+      font-size: 1.5vw;
+      margin: 0.3vw;
+      text-decoration: underline;
+    }
+
+    p {
+      color: $card-border;
+      text-align: left;
+      padding: 0.2vw;
+      margin: 0.3vw;
+      font-size: 1.3vw;
+    }
+  }
+}
+
+// .gloves-icon {
+//   transform: rotate(90deg);
+//   margin-top: -7vh;
+//   .cls-1 {
+//     fill: #908f90;
+//   }
+
+//   .cls-2 {
+//     fill: #d7d7d7;
+//   }
+
+//   .cls-3 {
+//     fill: #afafaf;
+//   }
+
+//   .cls-4 {
+//     fill: #c4c4c4;
+//   }
+
+//   .cls-5,
+//   .cls-7 {
+//     opacity: 0.15;
+//   }
+
+//   .cls-6,
+//   .cls-7 {
+//     fill: none;
+//   }
+
+//   .cls-7 {
+//     stroke: #000;
+//     stroke-miterlimit: 10;
+//   }
+
+//   .cls-8 {
+//     fill: #8b8b8c;
+//   }
+// }
+
+// .boots-icon {
+//   height: 5vw;
+
+//   .cls-1 {
+//     fill: #eab957;
+//   }
+
+//   .cls-2 {
+//     fill: #a9a9a9;
+//   }
+
+//   .cls-3 {
+//     fill: #7f7f80;
+//   }
+
+//   .cls-4 {
+//     fill: #8e4922;
+//   }
+
+//   .cls-5 {
+//     fill: #472515;
+//   }
+
+//   .cls-6 {
+//     opacity: 0.15;
+//   }
+
+//   .cls-7 {
+//     fill: none;
+//   }
+
+//   .cls-8 {
+//     fill: #8b8b8c;
+//   }
+// }
+
+// .tank-icon {
+//   .cls-1 {
+//     fill: #e5e4e4;
+//   }
+
+//   .cls-2 {
+//     fill: #1d1d1b;
+//   }
+
+//   .cls-3 {
+//     fill: #d7d7d7;
+//   }
+
+//   .cls-4 {
+//     fill: #788d8e;
+//   }
+// }
+// .helmet-icon {
+//   .cls-1 {
+//     fill: #7c7c7c;
+//   }
+
+//   .cls-2 {
+//     fill: #c69152;
+//   }
+
+//   .cls-3 {
+//     fill: #777776;
+//   }
+
+//   .cls-4 {
+//     fill: #d7d7d7;
+//   }
+
+//   .cls-5 {
+//     fill: #c0e3e7;
+//   }
+
+//   .cls-6 {
+//     fill: #806036;
+//   }
+
+//   .cls-7 {
+//     fill: #888989;
+//   }
+
+//   .cls-8 {
+//     fill: #bfbebe;
+//   }
+
+//   .cls-9 {
+//     fill: #717070;
+//   }
+
+//   .cls-10 {
+//     fill: #3ebfee;
+//     opacity: 0.33;
+//   }
+
+//   .cls-11 {
+//     opacity: 0.59;
+//     fill: url(#radial-gradient);
+//   }
+// }
+
+.container-visible-text {
+  text-align: left;
+  width: 90%;
+  margin: 2% auto;
+  border: 1px solid $card-bc;
+  border-radius: 1vw;
+  overflow: hidden;
+
+  p {
+    color: $card-border;
+    text-align: left;
+    padding: 0.2vw;
+    margin: 0.3vw;
+    font-size: 1.3vw;
+
+    span {
+      font-weight: 900;
+      font-size: 1.5vw;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container-visible-text {
+    height: auto;
+
+    p {
+      font-size: 1vw;
+    }
+
+    span {
+      font-size: 1.1vw;
+    }
+  }
+
+  .name {
+    h3 {
+      font-size: 1rem;
+      margin: 0.5vw;
+    }
+  }
+  .svg-container-parts {
+    justify-content: flex-start;
+  }
+}
+
+#text-suit,
+.back-arrow,
+.left-arrow,
+.right-arrow {
+  animation: text-focus-in 4s 1;
+}
+
+#text-suit {
+  color: $card-border;
+  width: 15vw;
+}
+
+// mercury suit color classes
 
   .mercury-space-suit {
-    width: 80%;
-    margin-left: 10%;
-    position: absolute;
+    width: 70%;
+    margin-top: 25%;
 
     .cls-1 {
       fill: #e5e4e4;
@@ -366,108 +666,6 @@ svg {
       fill: url(#radial-gradient);
     }
   }
-}
-
-#card-right {
-  animation: slide-in-right 3s 1;
-}
-
-.svg-container-parts {
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-
-  .part-container {
-    width: 40%;
-    margin-top: 10%;
-  }
-
-  .helmet-icon {
-    .cls-1 {
-      fill: #7c7c7c;
-    }
-
-    .cls-2 {
-      fill: #c69152;
-    }
-
-    .cls-3 {
-      fill: #777776;
-    }
-
-    .cls-4 {
-      fill: #d7d7d7;
-    }
-
-    .cls-5 {
-      fill: #c0e3e7;
-    }
-
-    .cls-6 {
-      fill: #806036;
-    }
-
-    .cls-7 {
-      fill: #888989;
-    }
-
-    .cls-8 {
-      fill: #bfbebe;
-    }
-
-    .cls-9 {
-      fill: #717070;
-    }
-
-    .cls-10 {
-      fill: #3ebfee;
-      opacity: 0.33;
-    }
-
-    .cls-11 {
-      opacity: 0.59;
-      fill: url(#radial-gradient);
-    }
-  }
-
-  .name {
-    width: 100%;
-
-    h3 {
-      color: $card-border;
-      text-align: center;
-      text-transform: uppercase;
-    }
-  }
-
-  .text-container {
-    width: 90%;
-    margin: 2% auto;
-    border: 1px solid $card-bc;
-    border-radius: 1vw;
-    overflow: hidden;
-
-    h4 {
-      color: $card-border;
-      font-size: 1.5vw;
-      margin: 0.3vw;
-      text-decoration: underline;  
-    }
-
-
-
-    p {
-      color: $card-border;
-      text-align: left;
-      padding: 0.2vw;
-    margin: 0.3vw;
-    font-size: 1.3vw;
-    }
-  }
-}
 
 .gloves-icon {
   transform: rotate(90deg);
@@ -561,64 +759,189 @@ svg {
     fill: #788d8e;
   }
 }
+.helmet-icon {
+  .cls-1 {
+    fill: #7c7c7c;
+  }
 
-.container-visible-text {
-  text-align: left;
-  width: 90%;
-  margin: 2% auto;
-  border: 1px solid $card-bc;
-  border-radius: 1vw;
-  overflow: hidden;
+  .cls-2 {
+    fill: #c69152;
+  }
 
-  p {
-    color: $card-border;
-    text-align: left;
-    padding: 0.2vw;
-    margin: 0.3vw;
-    font-size: 1.3vw;
+  .cls-3 {
+    fill: #777776;
+  }
 
-    span {
-      font-weight: 900;
-      font-size: 1.5vw;
-    }
+  .cls-4 {
+    fill: #d7d7d7;
+  }
+
+  .cls-5 {
+    fill: #c0e3e7;
+  }
+
+  .cls-6 {
+    fill: #806036;
+  }
+
+  .cls-7 {
+    fill: #888989;
+  }
+
+  .cls-8 {
+    fill: #bfbebe;
+  }
+
+  .cls-9 {
+    fill: #717070;
+  }
+
+  .cls-10 {
+    fill: #3ebfee;
+    opacity: 0.33;
+  }
+
+  .cls-11 {
+    opacity: 0.59;
+    fill: url(#radial-gradient);
   }
 }
 
-@media screen and (max-width: 960px) {
-  .container-visible-text {
-      height: auto;
+// mercury spaceship color clases
 
-        p {
-            font-size: 1vw;
-        }
+.friendship-mercury {
+  height: 80%;
 
-        span {
-            font-size: 1.1vw;
-        }
+
+  .cls-1 {
+    fill: #bf6667;
+    stroke: #787678;
   }
-
-  .name {
-        h3 {
-             font-size: 1rem;
-             margin: 0.5vw;
-        }
-
+  .cls-1,
+  .cls-10,
+  .cls-19,
+  .cls-2,
+  .cls-20,
+  .cls-21,
+  .cls-22,
+  .cls-23,
+  .cls-24,
+  .cls-27,
+  .cls-28,
+  .cls-3,
+  .cls-4,
+  .cls-5,
+  .cls-9 {
+    stroke-miterlimit: 10;
   }
-  .svg-container-parts {
-      justify-content: flex-start;
+  .cls-19,
+  .cls-2,
+  .cls-20,
+  .cls-21,
+  .cls-22,
+  .cls-23,
+  .cls-24,
+  .cls-27,
+  .cls-28,
+  .cls-3 {
+    fill: none;
   }
-
+  .cls-2 {
+    stroke: #874948;
+  }
+  .cls-3 {
+    stroke: #1d1d1b;
+  }
+  .cls-11,
+  .cls-4 {
+    fill: #383c52;
+  }
+  .cls-4 {
+    stroke: #454544;
+  }
+  .cls-5 {
+    fill: #afb9bb;
+    stroke: #616062;
+  }
+  .cls-6 {
+    fill: #363635;
+  }
+  .cls-7 {
+    fill: #2b2c2a;
+  }
+  .cls-8 {
+    fill: #21211f;
+  }
+  .cls-9 {
+    fill: #c4c9c5;
+  }
+  .cls-10,
+  .cls-9 {
+    stroke: #939393;
+  }
+  .cls-10 {
+    fill: #c4c7c5;
+  }
+  .cls-12 {
+    fill: #2c2f40;
+  }
+  .cls-13 {
+    fill: #cdd0cd;
+  }
+  .cls-14 {
+    fill: #a3adaf;
+  }
+  .cls-15 {
+    fill: #a3a3a3;
+  }
+  .cls-16 {
+    fill: silver;
+  }
+  .cls-17 {
+    fill: #97a1a2;
+  }
+  .cls-18 {
+    fill: #874948;
+  }
+  .cls-19 {
+    stroke: #363635;
+  }
+  .cls-20 {
+    stroke: silver;
+  }
+  .cls-21,
+  .cls-24 {
+    stroke: #a0aaab;
+  }
+  .cls-22 {
+    stroke: #ca392e;
+  }
+  .cls-23 {
+    stroke: #383c52;
+  }
+  .cls-24 {
+    stroke-width: 0.5px;
+  }
+  .cls-25 {
+    fill: #fff;
+  }
+  .cls-26 {
+    fill: #1a1f55;
+  }
+  .cls-27 {
+    stroke: #941914;
+    stroke-width: 0.25px;
+  }
+  .cls-28 {
+    stroke: #463a42;
+  }
+  .cls-29 {
+    fill: #aad0bb;
+  }
+  .cls-30 {
+    fill: #ccc;
+  }
+  .cls-31 {
+    fill: #e3e3e3;
+  }
 }
-
-  #text-suit,
-  .back-arrow,
-  .left-arrow,
-  .right-arrow {
-    animation: text-focus-in 4s 1;
-  }
-
-  #text-suit {
-    color: $card-border;
-    width: 15vw;
-  }
-
