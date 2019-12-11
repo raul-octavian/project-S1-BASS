@@ -1,4 +1,4 @@
-@import "../../mixins.scss";
+@import "../../../mixins.scss";
 
 main {
   z-index: 2;
@@ -12,6 +12,7 @@ main {
 
   h2 {
     margin-top: 0;
+    color: $card-border;
   }
 
   article {
@@ -114,9 +115,4 @@ main {
   }
 }
 
-footer {
-  background-color: $footer-bc;
-  height: 35vh;
-  width: 100vw;
-  z-index: 10;
-}
+

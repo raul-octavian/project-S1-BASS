@@ -1,18 +1,17 @@
 @import "../mixins";
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
 
 body {
   margin: 0;
-  font-family: 'Quicksand', sans-serif;
-
+  font-family: "Quicksand", sans-serif;
 }
 
 #nav {
   @include flex(row, nowrap, space-around, center, center);
   height: 20vh;
+  width: 100vw;
   background: rgb(0, 0, 0);
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(33, 0, 30, 1) 100%);
-  padding: 0 5vw;
 
   .nav-link {
     flex: 0 1 30vw;
@@ -27,48 +26,45 @@ body {
     }
 
     #logo-icon {
+      height: 18vh;
 
-        height: 18vh;
+      .cls-1 {
+        fill: #020202;
+      }
 
-        .cls-1 {
-            fill: #020202;
-        }
+      .cls-1,
+      .cls-4,
+      .cls-6 {
+        stroke: #fff;
+      }
 
-        .cls-1,
-        .cls-4,
-        .cls-6 {
-            stroke: #fff;
-        }
+      .cls-1,
+      .cls-2,
+      .cls-4,
+      .cls-5,
+      .cls-6 {
+        stroke-miterlimit: 10;
+      }
 
-        .cls-1,
-        .cls-2,
-        .cls-4,
-        .cls-5,
-        .cls-6 {
-            stroke-miterlimit: 10;
-        }
+      .cls-2,
+      .cls-3,
+      .cls-5 {
+        fill: #fff;
+      }
 
-        .cls-2,
-        .cls-3,
-        .cls-5 {
-            fill: #fff;
-        }
+      .cls-2 {
+        stroke: #1d1d1b;
+      }
 
-        .cls-2 {
-            stroke: #1d1d1b;
-        }
+      .cls-5 {
+        stroke: #000;
+      }
 
-        .cls-5 {
-            stroke: #000;
-        }
-
-        .cls-6 {
-            fill: none;
-        }
+      .cls-6 {
+        fill: none;
+      }
     }
   }
-
-  
 
   ul {
     @include flex(row, nowrap, space-between, center, center);
@@ -197,17 +193,479 @@ body {
 main {
   background: url("../assets/background-1.png");
   width: 100vw;
-  background-position: -5px -5px;
-  
 }
 
-footer {
-  background-color: $footer-bc;
-  height: 35vh;
+.desccontainer {
   width: 100vw;
-  z-index: 0;
+  height: auto;
+}
+
+#maintext {
+  color: #fff3b8;
+  font-size: 3vw;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  text-align: center;
+}
+
+#desc {
+  color: #ffeedd;
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.contentcontainer {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin-top: 20vw;
   position: relative;
 }
 
+.content {
+  height: 39vh;
+  width: 40vw;
+  /*border-color: #FFF3B8;
+  border-style: solid;
+  border-width: 7px;*/
+  margin: 55px;
+  position: relative;
+}
 
+#erik {
+  position: absolute;
+  width: 25vw;
+  left: 45%;
+  cls-1 {
+    fill: #b7b7b7;
+  }
+  .cls-1,
+  .cls-2,
+  .cls-3,
+  .cls-4 {
+    stroke: #1d1d1b;
+  }
+  .cls-1,
+  .cls-2,
+  .cls-3,
+  .cls-4,
+  .cls-6 {
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+  }
+  .cls-2,
+  .cls-6 {
+    fill: #fff;
+  }
+  .cls-3 {
+    fill: none;
+  }
+  .cls-4 {
+    fill: #e52421;
+  }
+  .cls-5 {
+    fill: #1d1d1b;
+  }
+  .cls-6 {
+    stroke: #feeddd;
+  }
+}
 
+#homepagesuit {
+  width: 10vw;
+  position: absolute;
+  top: 2vw;
+  right: 10%;
+  animation: Levitation 7s infinite ease-in-out;
+  .cls-1 {
+    fill: #7f7f80;
+  }
+  .cls-2 {
+    fill: #f8f7f7;
+  }
+  .cls-3 {
+    fill: #efefef;
+  }
+  .cls-4 {
+    fill: #c2c1c1;
+  }
+  .cls-5 {
+    fill: #a45137;
+  }
+  .cls-6 {
+    fill: #cfcccc;
+  }
+  .cls-7 {
+    fill: #442219;
+  }
+  .cls-8 {
+    fill: #294b9b;
+  }
+  .cls-9 {
+    fill: #555454;
+  }
+  .cls-10 {
+    fill: #fbf6e7;
+  }
+  .cls-11 {
+    fill: #444;
+  }
+  .cls-12 {
+    fill: #bab6ae;
+  }
+  .cls-13 {
+    fill: #774026;
+  }
+  .cls-14 {
+    fill: #eaeaea;
+  }
+  .cls-15 {
+    fill: #515151;
+  }
+  .cls-16 {
+    fill: #d31216;
+  }
+  .cls-17,
+  .cls-18,
+  .cls-21,
+  .cls-24,
+  .cls-25 {
+    fill: none;
+  }
+  .cls-17 {
+    stroke: #7f7f80;
+  }
+  .cls-17,
+  .cls-18,
+  .cls-24,
+  .cls-25 {
+    stroke-miterlimit: 10;
+  }
+  .cls-18 {
+    stroke: #cfcccc;
+  }
+  .cls-19 {
+    fill: #9b1915;
+  }
+  .cls-20 {
+    fill: #d1d0d1;
+  }
+  .cls-22 {
+    fill: #706f6f;
+  }
+  .cls-23 {
+    fill: #4d4b4c;
+  }
+  .cls-24 {
+    stroke: #000;
+  }
+  .cls-25 {
+    stroke: #888989;
+    stroke-width: 0.5px;
+  }
+}
+
+.info {
+  justify-content: end;
+  align-content: flex-end;
+  display: flex;
+  padding: 5vh;
+  color: white;
+  width: 20vw;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.inforight {
+  justify-content: end;
+  align-content: flex-end;
+  display: flex;
+  padding-top: 5vh;
+  padding-left: 20vh;
+  color: white;
+  width: 20vw;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#rocket {
+  position: absolute;
+  top: 2vw;
+  width: 3vw;
+  .cls-1,
+  .cls-2,
+  .cls-9 {
+    fill: none;
+  }
+  .cls-1 {
+    stroke: #d1b186;
+  }
+  .cls-1,
+  .cls-2,
+  .cls-3,
+  .cls-9 {
+    stroke-miterlimit: 10;
+  }
+  .cls-2 {
+    stroke: #1d1d1b;
+  }
+  .cls-3 {
+    fill: #b8b5a7;
+    stroke: #504f4e;
+  }
+  .cls-4 {
+    fill: #1d1d1b;
+  }
+  .cls-5 {
+    fill: #58637c;
+  }
+  .cls-6 {
+    fill: #a19d9a;
+  }
+  .cls-7 {
+    fill: #bdbabd;
+  }
+  .cls-8 {
+    fill: #b5aca0;
+  }
+  .cls-9 {
+    stroke: #873e1e;
+    stroke-width: 0.75px;
+  }
+  .cls-10 {
+    fill: #cbbdab;
+  }
+  .cls-11 {
+    fill: #e6d2a3;
+  }
+  .cls-12 {
+    fill: #919199;
+  }
+  .cls-13 {
+    fill: #3e3e3d;
+  }
+  .cls-14 {
+    fill: #987f6b;
+  }
+  .cls-15 {
+    fill: #a8a599;
+  }
+  .cls-16 {
+    fill: #d1b186;
+  }
+  .cls-17 {
+    fill: #989491;
+  }
+  .cls-18 {
+    fill: #a9a5a2;
+  }
+  .cls-19 {
+    fill: #4a5368;
+  }
+  .cls-20 {
+    fill: #fff;
+  }
+  .cls-21 {
+    fill: #58627b;
+  }
+  .cls-22 {
+    fill: #bcad87;
+  }
+  .cls-23 {
+    fill: #2b2827;
+  }
+  .cls-24 {
+    fill: #615144;
+  }
+  .cls-25 {
+    fill: #2b2b2a;
+  }
+  .cls-26 {
+    fill: #e0e0e0;
+  }
+  .cls-27 {
+    fill: #474746;
+  }
+  .cls-28 {
+    fill: #c9caca;
+  }
+  .cls-29 {
+    fill: #aca8a5;
+  }
+  .cls-30 {
+    fill: #bfb5a9;
+  }
+  .cls-31 {
+    fill: #bfbbad;
+  }
+}
+
+#fire {
+  position: absolute;
+  width: 3vw;
+  top: 19vw;
+  animation: Levitation 0.001s infinite ease-in-out;
+  .cls-1 {
+    fill: #ff600b;
+  }
+  .cls-2 {
+    fill: #ff600b;
+  }
+  .cls-3 {
+    fill: #ff600b;
+  }
+  .cls-4 {
+    fill: #ff600b;
+  }
+  .cls-5 {
+    fill: #ff600b;
+  }
+}
+
+#firetwo {
+  position: absolute;
+  top: 19vw;
+  width: 3vw;
+  .cls-1 {
+    fill: #ff600b;
+  }
+  .cls-2 {
+    fill: #ffde63;
+  }
+  .cls-3 {
+    fill: #fffae1;
+  }
+  .cls-4 {
+    fill: #ffdf7b;
+  }
+  .cls-5 {
+    fill: #ffe6a1;
+  }
+}
+
+@keyframes Levitation {
+  0% {
+    transform: translateY(0vw);
+  }
+  50% {
+    transform: translateY(1vw);
+  }
+  100% {
+    transform: translateY(0vw);
+  }
+}
+
+a {
+  color: white;
+}
+
+footer {
+  background: url("../assets/background-1.png");
+  width: 100vw;
+  z-index: 0;
+  position: relative;
+  color: $card-border;
+  text-align: center;
+  border-top: solid 2px #fff3b8;
+  padding-bottom: 2vw;
+
+  a {
+    text-decoration: none;
+
+    &:visited,
+    &:active {
+      color: $card-border;
+    }
+    .instagaram-button {
+      background-color: $card-bc;
+      height: 6vw;
+      padding: 2vw;
+      box-sizing: border-box;
+    }
+    h4 {
+      margin: 0;
+      font-size: 2vw;
+      padding: 0;
+    }
+  }
+
+  section {
+    @include flex(row, nowrap, space-around, center, center);
+    font-weight: 200;
+
+    img {
+      height: 7vw;
+      position: absolute;
+      top: 8vw;
+    }
+
+    .footer-section-2 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-grow: 2;
+
+      p {
+        margin: 1vw;
+      }
+    }
+
+    ul {
+      @include flex(column, nowrap, center, center, center);
+      list-style-type: none;
+      flex-grow: 1;
+
+      li {
+        margin-top: 2vw;
+      }
+    }
+
+    .footer-section-5 {
+      flex-grow: 2;
+      @include flex(row, nowrap, center, center, center);
+
+      form {
+        width: 80%;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 50%;
+        resize: vertical;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        border: 1px solid $card-bc;
+        border-radius: 1vw;
+        margin: 5px 1px 3px 0px;
+        outline: none;
+        background-color: transparent;
+        color: $card-border;
+      }
+
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      textarea:focus {
+        box-shadow: 0 0 2px $contact-bc;
+        padding: 5px 0px 5px 5px;
+        margin: 5px 1px 3px 0px;
+        border: 2px solid $contact-bc;
+      }
+    }
+  }
+  .footer-section-6 {
+
+    p {
+      text-align: right;
+      padding-right: 3vw;
+    }
+
+  }
+}

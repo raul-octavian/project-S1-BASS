@@ -48,10 +48,6 @@ main {
   align-self: center;
 }
 
-mercury-gloves-hover {
-  fill: red;
-}
-
 .visible {
   display: flex;
 }
@@ -127,10 +123,21 @@ mercury-gloves-hover {
   border-radius: 2vw;
   width: 100%;
 }
-.card-botton p {
+.card-botton h3 {
   text-align: center;
+  font-weight: 900;
 }
 
+@media screen and (max-width: 960px) {
+  .card-botton h3 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .card-botton h3 {
+    font-size: 0.7rem;
+  }
+}
 #card-left {
   animation: slide-in-br 1.5s 1;
 }
@@ -332,32 +339,6 @@ svg {
   opacity: 0.59;
   fill: url(#radial-gradient);
 }
-.svg-container .mercury-space-suit .mercury-gloves-hover {
-  fill: red;
-}
-.svg-container .mercury-space-suit .mercury-boots-hover {
-  fill: red;
-}
-.svg-container .mercury-space-suit .mercury-tank-hover {
-  fill: red;
-}
-
-#mercury-suit-hoover-elements .helmet {
-  width: 100%;
-  height: 20%;
-}
-#mercury-suit-hoover-elements .gloves {
-  width: 100%;
-  height: 30%;
-}
-#mercury-suit-hoover-elements .boots {
-  width: 70%;
-  height: 50%;
-}
-#mercury-suit-hoover-elements .tank {
-  width: 30%;
-  height: 50%;
-}
 
 #card-right {
   animation: slide-in-right 3s 1;
@@ -416,6 +397,7 @@ svg {
 .svg-container-parts .name h3 {
   color: #FFEEDD;
   text-align: center;
+  text-transform: uppercase;
 }
 .svg-container-parts .text-container {
   width: 90%;
@@ -424,11 +406,24 @@ svg {
   border-radius: 1vw;
   overflow: hidden;
 }
+.svg-container-parts .text-container h4 {
+  color: #FFEEDD;
+  font-size: 1.5vw;
+  margin: 0.3vw;
+  text-decoration: underline;
+}
 .svg-container-parts .text-container p {
   color: #FFEEDD;
-  text-align: center;
+  text-align: left;
+  padding: 0.2vw;
+  margin: 0.3vw;
+  font-size: 1.3vw;
 }
 
+.gloves-icon {
+  transform: rotate(90deg);
+  margin-top: -7vh;
+}
 .gloves-icon .cls-1 {
   fill: #908f90;
 }
@@ -457,6 +452,87 @@ svg {
   fill: #8b8b8c;
 }
 
+.boots-icon {
+  height: 5vw;
+}
+.boots-icon .cls-1 {
+  fill: #eab957;
+}
+.boots-icon .cls-2 {
+  fill: #a9a9a9;
+}
+.boots-icon .cls-3 {
+  fill: #7f7f80;
+}
+.boots-icon .cls-4 {
+  fill: #8e4922;
+}
+.boots-icon .cls-5 {
+  fill: #472515;
+}
+.boots-icon .cls-6 {
+  opacity: 0.15;
+}
+.boots-icon .cls-7 {
+  fill: none;
+}
+.boots-icon .cls-8 {
+  fill: #8b8b8c;
+}
+
+.tank-icon .cls-1 {
+  fill: #e5e4e4;
+}
+.tank-icon .cls-2 {
+  fill: #1d1d1b;
+}
+.tank-icon .cls-3 {
+  fill: #d7d7d7;
+}
+.tank-icon .cls-4 {
+  fill: #788d8e;
+}
+
+.container-visible-text {
+  text-align: left;
+  width: 90%;
+  margin: 2% auto;
+  border: 1px solid #D6A1A1;
+  border-radius: 1vw;
+  overflow: hidden;
+}
+.container-visible-text p {
+  color: #FFEEDD;
+  text-align: left;
+  padding: 0.2vw;
+  margin: 0.3vw;
+  font-size: 1.3vw;
+}
+.container-visible-text p span {
+  font-weight: 900;
+  font-size: 1.5vw;
+}
+
+@media screen and (max-width: 960px) {
+  .container-visible-text {
+    height: auto;
+  }
+  .container-visible-text p {
+    font-size: 1vw;
+  }
+  .container-visible-text span {
+    font-size: 1.1vw;
+  }
+
+  .name h3 {
+    font-size: 1rem;
+    margin: 0.5vw;
+  }
+
+  .svg-container-parts {
+    justify-content: flex-start;
+  }
+}
 #text-suit,
 .back-arrow,
 .left-arrow,
