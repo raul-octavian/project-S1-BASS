@@ -43,6 +43,7 @@ main {
   width: 100vw;
   margin: 0 auto;
   height: 80vh;
+  position: relative;
 }
 #container section {
   align-self: center;
@@ -128,14 +129,84 @@ main {
   font-weight: 900;
 }
 
+#text-suit,
+.back-arrow,
+.left-arrow,
+.right-arrow {
+  animation: text-focus-in 4s 1;
+}
+
+#text-suit {
+  color: #FFEEDD;
+  width: 15vw;
+}
+
+@media screen and (max-width: 1200px) {
+  .card-suit {
+    height: 45vw;
+    width: 27.1vw;
+  }
+}
 @media screen and (max-width: 960px) {
   .card-botton h3 {
     font-size: 1rem;
   }
+
+  .card-suit {
+    height: 45vw;
+    width: 27.1vw;
+  }
+
+  .container-visible-text {
+    height: auto;
+  }
+  .container-visible-text p {
+    font-size: 1vw;
+  }
+  .container-visible-text span {
+    font-size: 1.1vw;
+  }
+  .container-visible-text .name h3 {
+    font-size: 1rem;
+    margin: 0.5vw;
+  }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 760px) {
   .card-botton h3 {
     font-size: 0.7rem;
+  }
+
+  #text-suit {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    left: 0;
+    text-align: center;
+  }
+
+  .card-suit {
+    height: 48vw;
+    width: 28.9vw;
+  }
+}
+@media screen and (max-width: 660px) {
+  .card-suit {
+    height: 52vw;
+    width: 31.3vw;
+  }
+
+  #text-suit {
+    position: absolute;
+    top: 0;
+    width: 60vw;
+    left: 20vw;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card-suit {
+    height: 60vw;
+    width: 36.1vw;
   }
 }
 #card-left {
@@ -255,38 +326,6 @@ svg {
 .container-visible-text p span {
   font-weight: 900;
   font-size: 1.5vw;
-}
-
-@media screen and (max-width: 960px) {
-  .container-visible-text {
-    height: auto;
-  }
-  .container-visible-text p {
-    font-size: 1vw;
-  }
-  .container-visible-text span {
-    font-size: 1.1vw;
-  }
-
-  .name h3 {
-    font-size: 1rem;
-    margin: 0.5vw;
-  }
-
-  .svg-container-parts {
-    justify-content: flex-start;
-  }
-}
-#text-suit,
-.back-arrow,
-.left-arrow,
-.right-arrow {
-  animation: text-focus-in 4s 1;
-}
-
-#text-suit {
-  color: #FFEEDD;
-  width: 15vw;
 }
 
 .mercury-space-suit {

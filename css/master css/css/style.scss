@@ -11,6 +11,7 @@ main {
   width: 100vw;
   margin: 0 auto;
   height: 80vh;
+  position: relative;
 
   section {
     align-self: center;
@@ -93,19 +94,97 @@ main {
   }
 }
 
+#text-suit,
+.back-arrow,
+.left-arrow,
+.right-arrow {
+  animation: text-focus-in 4s 1;
+}
+
+#text-suit {
+  color: $card-border;
+  width: 15vw;
+}
+
+@media screen and (max-width: 1200px) {
+  .card-suit {
+    height: 45vw;
+    width: 27.1vw;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .card-botton {
     h3 {
       font-size: 1rem;
     }
   }
+  .card-suit {
+    height: 45vw;
+    width: 27.1vw;
+  }
+
+  .container-visible-text {
+    height: auto;
+
+    p {
+      font-size: 1vw;
+    }
+
+    span {
+      font-size: 1.1vw;
+    }
+
+    .name {
+      h3 {
+        font-size: 1rem;
+        margin: 0.5vw;
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 760px) {
   .card-botton {
     h3 {
       font-size: 0.7rem;
     }
+  }
+
+  #text-suit {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    left: 0;
+    text-align: center;
+  }
+  .card-suit {
+    height: 48vw;
+    width: 28.9vw;
+  }
+}
+
+@media screen and (max-width: 660px) {
+ 
+  .card-suit {
+    height: 52vw;
+    width: 31.3vw;
+  }
+
+    #text-suit {
+    position: absolute;
+    top: 0;
+    width: 60vw;
+    left: 20vw;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+ 
+  .card-suit {
+    height: 60vw;
+    width: 36.1vw;
   }
 }
 
@@ -121,9 +200,7 @@ svg {
   width: 100%;
   height: 80%;
   position: relative;
-  @include flex (row, nowrap, center, center, center);
-
-
+  @include flex(row, nowrap, center, center, center);
 }
 
 #card-right {
@@ -225,7 +302,6 @@ svg {
   }
 }
 
-
 .container-visible-text {
   text-align: left;
   width: 90%;
@@ -248,285 +324,249 @@ svg {
   }
 }
 
-@media screen and (max-width: 960px) {
-  .container-visible-text {
-    height: auto;
-
-    p {
-      font-size: 1vw;
-    }
-
-    span {
-      font-size: 1.1vw;
-    }
-  }
-
-  .name {
-    h3 {
-      font-size: 1rem;
-      margin: 0.5vw;
-    }
-  }
-  .svg-container-parts {
-    justify-content: flex-start;
-  }
-}
-
-#text-suit,
-.back-arrow,
-.left-arrow,
-.right-arrow {
-  animation: text-focus-in 4s 1;
-}
-
-#text-suit {
-  color: $card-border;
-  width: 15vw;
-}
-
 // mercury suit color classes
 
-  .mercury-space-suit {
-    width: 70%;
-    margin-top: 25%;
+.mercury-space-suit {
+  width: 70%;
+  margin-top: 25%;
 
-    .cls-1 {
-      fill: #e5e4e4;
-    }
-
-    .cls-2 {
-      fill: #1d1d1b;
-    }
-
-    .cls-3 {
-      fill: #d7d7d7;
-    }
-
-    .cls-4 {
-      fill: #788d8e;
-    }
-
-    .cls-5 {
-      fill: #d4ebed;
-    }
-
-    .cls-6 {
-      fill: #afafaf;
-    }
-
-    .cls-7 {
-      fill: #908f90;
-    }
-
-    .cls-8 {
-      fill: #eab957;
-    }
-
-    .cls-9 {
-      fill: #c4c4c4;
-    }
-
-    .cls-10 {
-      fill: #8e4922;
-    }
-
-    .cls-11 {
-      fill: #472515;
-    }
-
-    .cls-12 {
-      fill: #a9a9a9;
-    }
-
-    .cls-13 {
-      fill: #7f7f80;
-    }
-
-    .cls-14 {
-      fill: #5a92ce;
-    }
-
-    .cls-15 {
-      fill: #c0e3e7;
-    }
-
-    .cls-16 {
-      fill: #1955a0;
-    }
-
-    .cls-17 {
-      fill: #a58a5a;
-    }
-
-    .cls-18 {
-      fill: #bcbcbb;
-    }
-
-    .cls-19 {
-      fill: #444;
-    }
-
-    .cls-20 {
-      fill: #777776;
-    }
-
-    .cls-21 {
-      fill: #727272;
-    }
-
-    .cls-22 {
-      fill: #b88e46;
-    }
-
-    .cls-23 {
-      fill: #7c7c7c;
-    }
-
-    .cls-24 {
-      fill: #8b8b8c;
-    }
-
-    .cls-25 {
-      fill: #b7b7b7;
-    }
-
-    .cls-26 {
-      fill: #717070;
-    }
-
-    .cls-27 {
-      fill: #c2c1c1;
-    }
-
-    .cls-28 {
-      fill: #c69152;
-    }
-
-    .cls-29 {
-      fill: #806036;
-    }
-
-    .cls-30 {
-      fill: #888989;
-    }
-
-    .cls-31 {
-      fill: #16355a;
-    }
-
-    .cls-32 {
-      fill: #765922;
-    }
-
-    .cls-33 {
-      fill: #c5a470;
-    }
-
-    .cls-34 {
-      fill: #e5211c;
-    }
-
-    .cls-35 {
-      fill: #413118;
-    }
-
-    .cls-36 {
-      fill: #999;
-    }
-
-    .cls-37 {
-      fill: #bababa;
-    }
-
-    .cls-38 {
-      fill: #9c9b9b;
-    }
-
-    .cls-39 {
-      fill: #676766;
-    }
-
-    .cls-40,
-    .cls-41,
-    .cls-42,
-    .cls-43,
-    .cls-44,
-    .cls-48,
-    .cls-49,
-    .cls-51 {
-      fill: none;
-    }
-
-    .cls-40 {
-      stroke: #7f7f80;
-    }
-
-    .cls-40,
-    .cls-41,
-    .cls-43,
-    .cls-44,
-    .cls-49,
-    .cls-51 {
-      stroke-miterlimit: 10;
-    }
-
-    .cls-40,
-    .cls-41,
-    .cls-42,
-    .cls-43,
-    .cls-44 {
-      stroke-width: 0.5px;
-    }
-
-    .cls-41 {
-      stroke: #1d1d1b;
-    }
-
-    .cls-42 {
-      stroke: #717070;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .cls-43 {
-      stroke: #a8a7a7;
-    }
-
-    .cls-44 {
-      stroke: #727272;
-    }
-
-    .cls-45 {
-      fill: #bfbebe;
-    }
-
-    .cls-46 {
-      fill: #3ebfee;
-      opacity: 0.33;
-    }
-
-    .cls-47,
-    .cls-49 {
-      opacity: 0.15;
-    }
-
-    .cls-49 {
-      stroke: #000;
-    }
-
-    .cls-50 {
-      fill: #fff;
-    }
-
-    .cls-51 {
-      stroke: #9c9b9b;
-    }
-
-    .cls-52 {
-      opacity: 0.59;
-      fill: url(#radial-gradient);
-    }
+  .cls-1 {
+    fill: #e5e4e4;
   }
+
+  .cls-2 {
+    fill: #1d1d1b;
+  }
+
+  .cls-3 {
+    fill: #d7d7d7;
+  }
+
+  .cls-4 {
+    fill: #788d8e;
+  }
+
+  .cls-5 {
+    fill: #d4ebed;
+  }
+
+  .cls-6 {
+    fill: #afafaf;
+  }
+
+  .cls-7 {
+    fill: #908f90;
+  }
+
+  .cls-8 {
+    fill: #eab957;
+  }
+
+  .cls-9 {
+    fill: #c4c4c4;
+  }
+
+  .cls-10 {
+    fill: #8e4922;
+  }
+
+  .cls-11 {
+    fill: #472515;
+  }
+
+  .cls-12 {
+    fill: #a9a9a9;
+  }
+
+  .cls-13 {
+    fill: #7f7f80;
+  }
+
+  .cls-14 {
+    fill: #5a92ce;
+  }
+
+  .cls-15 {
+    fill: #c0e3e7;
+  }
+
+  .cls-16 {
+    fill: #1955a0;
+  }
+
+  .cls-17 {
+    fill: #a58a5a;
+  }
+
+  .cls-18 {
+    fill: #bcbcbb;
+  }
+
+  .cls-19 {
+    fill: #444;
+  }
+
+  .cls-20 {
+    fill: #777776;
+  }
+
+  .cls-21 {
+    fill: #727272;
+  }
+
+  .cls-22 {
+    fill: #b88e46;
+  }
+
+  .cls-23 {
+    fill: #7c7c7c;
+  }
+
+  .cls-24 {
+    fill: #8b8b8c;
+  }
+
+  .cls-25 {
+    fill: #b7b7b7;
+  }
+
+  .cls-26 {
+    fill: #717070;
+  }
+
+  .cls-27 {
+    fill: #c2c1c1;
+  }
+
+  .cls-28 {
+    fill: #c69152;
+  }
+
+  .cls-29 {
+    fill: #806036;
+  }
+
+  .cls-30 {
+    fill: #888989;
+  }
+
+  .cls-31 {
+    fill: #16355a;
+  }
+
+  .cls-32 {
+    fill: #765922;
+  }
+
+  .cls-33 {
+    fill: #c5a470;
+  }
+
+  .cls-34 {
+    fill: #e5211c;
+  }
+
+  .cls-35 {
+    fill: #413118;
+  }
+
+  .cls-36 {
+    fill: #999;
+  }
+
+  .cls-37 {
+    fill: #bababa;
+  }
+
+  .cls-38 {
+    fill: #9c9b9b;
+  }
+
+  .cls-39 {
+    fill: #676766;
+  }
+
+  .cls-40,
+  .cls-41,
+  .cls-42,
+  .cls-43,
+  .cls-44,
+  .cls-48,
+  .cls-49,
+  .cls-51 {
+    fill: none;
+  }
+
+  .cls-40 {
+    stroke: #7f7f80;
+  }
+
+  .cls-40,
+  .cls-41,
+  .cls-43,
+  .cls-44,
+  .cls-49,
+  .cls-51 {
+    stroke-miterlimit: 10;
+  }
+
+  .cls-40,
+  .cls-41,
+  .cls-42,
+  .cls-43,
+  .cls-44 {
+    stroke-width: 0.5px;
+  }
+
+  .cls-41 {
+    stroke: #1d1d1b;
+  }
+
+  .cls-42 {
+    stroke: #717070;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .cls-43 {
+    stroke: #a8a7a7;
+  }
+
+  .cls-44 {
+    stroke: #727272;
+  }
+
+  .cls-45 {
+    fill: #bfbebe;
+  }
+
+  .cls-46 {
+    fill: #3ebfee;
+    opacity: 0.33;
+  }
+
+  .cls-47,
+  .cls-49 {
+    opacity: 0.15;
+  }
+
+  .cls-49 {
+    stroke: #000;
+  }
+
+  .cls-50 {
+    fill: #fff;
+  }
+
+  .cls-51 {
+    stroke: #9c9b9b;
+  }
+
+  .cls-52 {
+    opacity: 0.59;
+    fill: url(#radial-gradient);
+  }
+}
 
 .gloves-icon {
   transform: rotate(90deg);
@@ -673,7 +713,6 @@ svg {
 .friendship-mercury {
   height: 80%;
 
-
   .cls-1 {
     fill: #bf6667;
     stroke: #787678;
@@ -806,5 +845,3 @@ svg {
     fill: #e3e3e3;
   }
 }
-
-

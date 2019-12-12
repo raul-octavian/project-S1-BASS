@@ -106,10 +106,12 @@ main .ornament {
   margin-top: 1vh;
   font-weight: bold;
   font-size: 0.8rem;
+  color: #FFEEDD;
 }
 #bottom-meet #info-meet p {
   font-size: 0.7rem;
   text-align: center;
+  color: #FFEEDD;
 }
 #bottom-meet #info-meet #schedule-meet {
   width: 100%;

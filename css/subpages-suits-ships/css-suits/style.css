@@ -48,7 +48,6 @@ main {
 #container #erik-right {
   width: 35vw;
   position: absolute;
-  left: 2vw;
 }
 #container #erik-right #erik-right-text {
   position: absolute;
@@ -138,6 +137,11 @@ main {
   font-size: 1.5vw;
 }
 
+@media screen and (min-width: 760px) {
+  #erik-right {
+    left: 2vw;
+  }
+}
 @media screen and (max-width: 960px) {
   .card {
     height: 34vw;
@@ -164,8 +168,21 @@ main {
     width: 24.1vw;
   }
 
-  #erik-right {
-    top: 20vw;
+  #container #erik-right {
+    width: 40vw;
+    top: 18vw;
+  }
+  #container #erik-right #erik-right-text {
+    font-size: 1.35vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  #container #erik-right {
+    top: 18vw;
+    width: 50vw;
+  }
+  #container #erik-right #erik-right-text {
+    font-size: 1.6vw;
   }
 }
 .top-left {

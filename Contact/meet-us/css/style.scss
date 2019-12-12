@@ -75,17 +75,13 @@ main {
             margin-top: 1vh;
             font-weight: bold;
             font-size: 0.8rem;
+            color: $card-border;
         }
 
         p{
             font-size:0.7rem;
             text-align: center;
-        }
-
-        #address-meet{
-            p {
-
-            }
+            color: $card-border;
         }
 
         #schedule-meet {
