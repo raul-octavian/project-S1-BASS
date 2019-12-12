@@ -159,7 +159,7 @@ main {
   }
 
   #container article {
-    height: 70%;
+    height: 80%;
   }
 }
 @media screen and (max-width: 660px) {
@@ -178,11 +178,11 @@ main {
 }
 @media screen and (max-width: 576px) {
   #container #erik-right {
-    top: 18vw;
-    width: 50vw;
+    top: 24vw;
+    width: 60vw;
   }
   #container #erik-right #erik-right-text {
-    font-size: 1.6vw;
+    font-size: 1.8vw;
   }
 }
 .top-left {

@@ -22,8 +22,6 @@ main {
       right: 1vw;
       width: 50%;
       font-size: 1.1vw;
-      
-
     }
 
     svg {
@@ -118,11 +116,9 @@ main {
 }
 
 @media screen and (min-width: 760px) {
-   #erik-right {
+  #erik-right {
     left: 2vw;
-   
   }
-  
 }
 
 @media screen and (max-width: 960px) {
@@ -140,11 +136,10 @@ main {
 
   #erik-right {
     top: 15vw;
-   
   }
 
   #container article {
-    height: 70%;
+    height: 80%;
   }
 }
 
@@ -154,40 +149,30 @@ main {
     width: 24.1vw;
   }
 
-   #container{
-      #erik-right{
-          width: 40vw;
-          top: 18vw;
+  #container {
+    #erik-right {
+      width: 40vw;
+      top: 18vw;
 
-           #erik-right-text {
-          font-size: 1.35vw;
+      #erik-right-text {
+        font-size: 1.35vw;
       }
-      }
-   }
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {
+  #container {
+    #erik-right {
+      top: 24vw;
+      width: 60vw;
 
-   #container{
-      #erik-right{
-
-          top: 18vw;
-          width: 50vw;
-
-          #erik-right-text {
-          font-size: 1.6vw;
+      #erik-right-text {
+        font-size: 1.8vw;
       }
-      }
-
-    
-
-
-
-      
-   }
+    }
+  }
 }
-
-
 
 .top-left {
   @include flex(column, nowrap, flex-start, flex-start, flex-start);
