@@ -604,6 +604,7 @@ footer section {
   align-items: center;
   align-content: center;
   font-weight: 200;
+  font-size: 1.5vw;
 }
 footer section img {
   height: 7vw;
@@ -627,6 +628,7 @@ footer section ul {
   align-items: center;
   align-content: center;
   list-style-type: none;
+  margin-right: 8vw;
   flex-grow: 1;
 }
 footer section ul li {
@@ -668,6 +670,7 @@ footer section .footer-section-5 textarea:focus {
 footer .footer-section-6 p {
   text-align: right;
   padding-right: 3vw;
+  font-size: 1.5vw;
 }
 
 /*# sourceMappingURL=style.css.map */

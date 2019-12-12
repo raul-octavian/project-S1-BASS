@@ -607,6 +607,7 @@ footer {
   section {
     @include flex(row, nowrap, space-around, center, center);
     font-weight: 200;
+    font-size: 1.5vw;
 
     img {
       height: 7vw;
@@ -623,12 +624,14 @@ footer {
 
       p {
         margin: 1vw;
+        
       }
     }
 
     ul {
       @include flex(column, nowrap, center, center, center);
       list-style-type: none;
+      margin-right: 8vw;
       flex-grow: 1;
 
       li {
@@ -674,6 +677,7 @@ footer {
     p {
       text-align: right;
       padding-right: 3vw;
+      font-size: 1.5vw;
     }
 
   }

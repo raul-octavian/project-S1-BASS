@@ -31,6 +31,7 @@
 main {
   z-index: 2;
   overflow: hidden;
+  height: auto;
 }
 
 #container {
@@ -133,9 +134,40 @@ main {
   height: 30%;
 }
 .card .acronims p {
-  margin: 2px;
+  margin: 0.3vw;
+  font-size: 1.5vw;
 }
 
+@media screen and (max-width: 960px) {
+  .card {
+    height: 34vw;
+    width: 20.5vw;
+  }
+}
+@media screen and (max-width: 760px) {
+  .card {
+    height: 38vw;
+    width: 22.9vw;
+  }
+
+  #erik-right {
+    top: 15vw;
+  }
+
+  #container article {
+    height: 70%;
+  }
+}
+@media screen and (max-width: 660px) {
+  .card {
+    height: 40vw;
+    width: 24.1vw;
+  }
+
+  #erik-right {
+    top: 20vw;
+  }
+}
 .top-left {
   display: flex;
   flex-flow: column nowrap;
