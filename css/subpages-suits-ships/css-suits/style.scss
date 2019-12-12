@@ -9,6 +9,62 @@ main {
   width: 100vw;
   margin: 0 auto;
   height: 80vh;
+  position: relative;
+
+  #erik-right {
+    width: 35vw;
+    position: absolute;
+    left: 2vw; 
+
+    #erik-right-text {
+      position: absolute;
+      top: 1vw;
+      right: 1vw;
+      width: 50%;
+      font-size: 1.1vw;
+      
+
+    }
+
+    svg {
+      .cls-1,
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-1,
+      .cls-2,
+      .cls-3,
+      .cls-4 {
+        stroke: #000;
+      }
+
+      .cls-1,
+      .cls-2,
+      .cls-3,
+      .cls-4,
+      .cls-5 {
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #b7b7b7;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #e52722;
+      }
+
+      .cls-5 {
+        stroke: #feeddd;
+      }
+    }
+  }
 
   h2 {
     margin-top: 0;
@@ -100,7 +156,7 @@ main {
 
   &:hover {
     margin-bottom: 0;
-     margin-top: -15px;
+    margin-top: -15px;
   }
 }
 #card-four {
@@ -114,5 +170,3 @@ main {
     margin-top: -2%;
   }
 }
-
-

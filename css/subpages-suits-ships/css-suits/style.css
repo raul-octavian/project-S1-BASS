@@ -42,6 +42,49 @@ main {
   width: 100vw;
   margin: 0 auto;
   height: 80vh;
+  position: relative;
+}
+#container #erik-right {
+  width: 35vw;
+  position: absolute;
+  left: 2vw;
+}
+#container #erik-right #erik-right-text {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  width: 50%;
+  font-size: 1.1vw;
+}
+#container #erik-right svg .cls-1,
+#container #erik-right svg .cls-5 {
+  fill: #fff;
+}
+#container #erik-right svg .cls-1,
+#container #erik-right svg .cls-2,
+#container #erik-right svg .cls-3,
+#container #erik-right svg .cls-4 {
+  stroke: #000;
+}
+#container #erik-right svg .cls-1,
+#container #erik-right svg .cls-2,
+#container #erik-right svg .cls-3,
+#container #erik-right svg .cls-4,
+#container #erik-right svg .cls-5 {
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+#container #erik-right svg .cls-2 {
+  fill: #b7b7b7;
+}
+#container #erik-right svg .cls-3 {
+  fill: none;
+}
+#container #erik-right svg .cls-4 {
+  fill: #e52722;
+}
+#container #erik-right svg .cls-5 {
+  stroke: #feeddd;
 }
 #container h2 {
   margin-top: 0;
