@@ -209,12 +209,9 @@ main {
   box-sizing: border-box;
   margin: 0;
 
-
   h1 {
     margin: 0;
-  
   }
-
 }
 
 #desc {
@@ -225,14 +222,13 @@ main {
 
 .container {
   width: 100vw;
-  height: 100vh;
+  height: auto;
 }
 
 .contentcontainer {
   width: 100vw;
-  height: 50vh;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
   margin-top: 20vw;
@@ -240,13 +236,11 @@ main {
 }
 
 .content {
-  height: 39vh;
   width: 40vw;
-  /*border-color: #FFF3B8;
-  border-style: solid;
-  border-width: 7px;*/
-  margin: 55px;
+  margin: 5vw;
   position: relative;
+  padding-bottom: 5vw;
+  @include flex(row, wrap, flex-start, center, center);
 }
 
 #erik {
@@ -289,7 +283,7 @@ main {
 }
 
 #homepagesuit {
-  width: 10vw;
+  width: 15vw;
   position: absolute;
   top: 2vw;
   right: 10%;
@@ -574,6 +568,8 @@ a {
   color: white;
 }
 
+// Footer style strats here
+
 footer {
   background: url("../assets/background-1.png");
   width: 100vw;
@@ -624,7 +620,6 @@ footer {
 
       p {
         margin: 1vw;
-        
       }
     }
 
@@ -650,7 +645,7 @@ footer {
       input[type="text"],
       input[type="email"],
       textarea {
-        width: 50%;
+        width: 80%;
         resize: vertical;
         box-sizing: border-box;
         padding: 5px 10px;
@@ -673,12 +668,184 @@ footer {
     }
   }
   .footer-section-6 {
-
     p {
       text-align: right;
       padding-right: 3vw;
       font-size: 1.5vw;
     }
+  }
+}
 
+@media screen and (max-width: 960px) {
+
+   #desc {
+    padding: 0 10%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #erik {
+    width: 33vw;
+  }
+
+  .contentcontainer {
+    padding-bottom: 5vw;
+    padding-top: 10vw;  
+  }
+
+  .content {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .info,
+  .inforight {
+    width: 70%;
+  }
+
+  .inforight {
+    padding-left: 18vw;
+  }
+  #homepagesuit {
+    padding-top: 2vw;
+  }
+  #rocket,
+  #fire,
+  #firetwo {
+    padding-left: 10vw;
+  }
+}
+
+@media screen and (max-width: 760px) {
+
+  #desc {
+    font-size: 2.3vw;
+    padding: 0 10%;
+  }
+
+  #maintext {
+    font-size: 2.5vw;
+  }
+  .contentcontainer {
+    margin-top: 30vw
+  }
+ 
+  #erik {
+    width: 39vw;
+  }
+  
+  #homepagesuit {
+    padding-top: 5vw;
+  }
+  #rocket,
+  #fire,
+  #firetwo {
+    padding-left: 12vw;
+    padding-top: 3vw;
+  }
+
+  footer {
+    section {
+      ul {
+        font-size: 1.8vw;
+      }
+
+      .footer-section-2 {
+        display: none;
+      }
+      .footer-section-3 {
+        margin-left: 10vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+
+
+  #desc {
+    font-size: 2.5vw;
+    padding: 0 10%;
+  }
+  #maintext {
+    font-size: 2.8vw;
+  }
+
+
+    #erik {
+    width: 42vw;
+  }
+  
+  
+   #homepagesuit {
+    padding-top: 5vw;
+    width: 20vw;
+  }
+  #rocket,
+  #fire,
+  #firetwo {
+    padding-left: 10vw;
+    width: 4vw;
+  }
+
+  #fire, #firetwo {
+    top: 25vw;
+  }
+
+  .info,
+  .inforight {
+    width: 60%;
+  }
+  
+  
+  footer {
+    section {
+      ul {
+        font-size: 1.9vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+    #erik {
+    width: 47vw;
+  }
+  
+  .contentcontainer {
+    margin-top: 34vw
+  }
+
+   #homepagesuit {
+    padding-top: 5vw;
+    width: 30vw;
+  }
+  #rocket,
+  #fire,
+  #firetwo {
+    padding-left: 24vw;
+    width: 7vw;
+  }
+
+  #fire, #firetwo {
+    top: 42.5vw;
+  }
+
+  .info,
+  .inforight {
+    width: 50%;
+  }
+  .inforight {
+    padding-left: 35vw;
+  }
+  
+  
+  footer {
+    section {
+      ul {
+        font-size: 2.1vw;
+      }
+    }
   }
 }
