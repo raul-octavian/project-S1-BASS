@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/subpages-suits-ships/css-suits/style.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <title>Space suit</title>
 </head>
@@ -15,7 +16,7 @@
 <body>
     <header>
         <nav id="nav">
-            <ul class="nav-link">
+            <ul class="nav-link" id="nav-link-one">
                 <a href="../space suits/space-suits.html">
                     <li class="list-item-1">
                         <svg class="space-icons" id="space-suit-icon" xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +133,7 @@
             </div>
 
 
-            <ul class="nav-link">
+            <ul class="nav-link" id="nav-link-two">
                 <a href="../gallery/gallery.html">
                     <li class="list-item-2">
                         <svg class="space-icons" id="space-gallery-icon" xmlns="http://www.w3.org/2000/svg"
@@ -179,6 +180,17 @@
                         Contact</li>
                 </a>
             </ul>
+            <!-- Mobile toggle menu button -->
+            <div id="hamburger">
+                <div id="nav-icon-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -358,6 +370,7 @@
         </div>
     
     </footer>
+    <script src="../js/app.js"></script>
 
 </body>
 

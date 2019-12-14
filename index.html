@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav id="nav">
-            <ul class="nav-link">
+            <ul class="nav-link" id="nav-link-one">
                 <a href="space suits/space-suits.html">
                     <li class="list-item-1">
                         <svg class="space-icons" id="space-suit-icon" xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +55,7 @@
                                 </g>
                             </g>
                         </svg>
-                        Space suits</li>
+                        <span>Space suits</span></li>
                 </a>
                 <a href="space ships/space-ships.html">
                     <li class="list-item-1">
@@ -86,7 +86,7 @@
                                 </g>
                             </g>
                         </svg>
-                        Space ships</li>
+                        <span>Space ships</span></li>
                 </a>
             </ul>
 
@@ -129,7 +129,7 @@
                 </a>
             </div>
 
-            <ul class="nav-link">
+            <ul class="nav-link" id="nav-link-two">
                 <a href="gallery/gallery.html">
                     <li class="list-item-2">
                         <svg class="space-icons" id="space-gallery-icon" xmlns="http://www.w3.org/2000/svg"
@@ -154,7 +154,7 @@
                                 </g>
                             </g>
                         </svg>
-                        Gallery</li>
+                        <span>Gallery</span></li>
                 </a>
                 <a href="Contact/contact.html">
                     <li class="list-item-2">
@@ -173,9 +173,20 @@
                             </g>
                         </svg>
 
-                        Contact</li>
+                        <span>Contact</span></li>
                 </a>
             </ul>
+            <!-- Mobile toggle menu button -->
+            <div id="hamburger">
+                <div id="nav-icon-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -1490,10 +1501,10 @@
             <div class="footer-section-5">
                 <form action="#">
                     <label>Sign up for updates!</lable><br>
-                    <input type="email" name="email" placeholder="Your email">
+                        <input type="email" name="email" placeholder="Your email">
                 </form>
             </div>
-           
+
         </section>
         <div class="footer-section-6">
             <p>Site by B.A.S.S crew</p>

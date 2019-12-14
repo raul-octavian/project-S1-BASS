@@ -92,7 +92,7 @@ main .ornament {
 #bottom-meet iframe {
   width: 50vw;
   height: 30vw;
-  margin: 0 2vw 0 0;
+  margin: 0 2vw 1vw 0;
 }
 #bottom-meet #info-meet {
   display: flex;
@@ -112,12 +112,67 @@ main .ornament {
   font-size: 0.7rem;
   text-align: center;
   color: #FFEEDD;
+  line-height: 0.9rem;
 }
 #bottom-meet #info-meet #schedule-meet {
   width: 100%;
 }
 #bottom-meet #info-meet #phone-meet {
   width: 100%;
+}
+
+@media screen and (max-width: 760px) {
+  main {
+    padding-top: 5vw;
+    height: auto;
+    overflow: initial;
+  }
+  main #top-meet h1 {
+    font-size: 2rem;
+  }
+  main #bottom-meet {
+    position: relative;
+    padding-bottom: 10vw;
+  }
+  main #bottom-meet #address-meet {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  main #bottom-meet #address-meet p {
+    margin-bottom: 0;
+  }
+  main #bottom-meet #phone-meet {
+    position: absolute;
+    bottom: 0;
+  }
+  main #bottom-meet #phone-meet p {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  main #bottom-meet {
+    padding-bottom: 12vw;
+  }
+  main #bottom-meet #info-meet #address-meet {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  main #bottom-meet #info-meet #address-meet p {
+    line-height: 0.6;
+    margin: 3px;
+  }
+  main #bottom-meet #info-meet #schedule-meet p {
+    line-height: 0.6;
+  }
+  main #bottom-meet #info-meet #phone-meet {
+    position: absolute;
+    bottom: 0;
+  }
+  main #bottom-meet #info-meet #phone-meet p {
+    margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

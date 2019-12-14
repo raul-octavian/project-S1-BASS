@@ -9,8 +9,8 @@ main {
   @include flex(column, nowrap, space-around, center, center);
   width: 100vw;
   margin: 0 auto;
-  height: 80vh;
   position: relative;
+  height: auto;
 
   #erik-right {
     width: 35vw;

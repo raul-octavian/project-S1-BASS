@@ -10,8 +10,9 @@ main {
   @include flex(row, nowrap, space-around, flex-start, center);
   width: 100vw;
   margin: 0 auto;
-  height: 80vh;
+  height: 70vh;
   position: relative;
+  padding-bottom: 2vw;
 
   section {
     align-self: center;
@@ -275,6 +276,26 @@ svg {
       }
     }
   }
+  .right-arrow, .left-arrow {
+    position: absolute;
+    bottom: 2vw;
+    width: 6vw;
+    height: 3vw;
+
+  }
+    .left-arrow {
+
+      left: 20vw;
+  }
+
+    .right-arrow {
+      right: 20vw;
+    }
+
+    .back-arrow {
+       width: 6vw;
+    height: 3vw;
+    }
 }
 
 @media screen and (max-width: 760px) {

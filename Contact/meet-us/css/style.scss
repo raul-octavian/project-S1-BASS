@@ -5,7 +5,7 @@ main {
   overflow: initial;
   padding: 15vh 0;
   height: auto;
-  z-index: 0 ;
+  z-index: 0;
 
   #top-meet {
     width: 100vw;
@@ -58,41 +58,112 @@ main {
 }
 
 #bottom-meet {
-    @include flex(row, nowrap, space-around, flex-start, flex-start);
-    margin-top: 10vh;
+  @include flex(row, nowrap, space-around, flex-start, flex-start);
+  margin-top: 10vh;
 
-    iframe {
-        width: 50vw;
-        height: 30vw;
-        margin: 0 2vw 0 0;
+  iframe {
+    width: 50vw;
+    height: 30vw;
+    margin: 0 2vw 1vw 0;
+  }
+
+  #info-meet {
+    @include flex(column, nowrap, space-between, center, center);
+    height: 30vw;
+
+    h4 {
+      margin-top: 1vh;
+      font-weight: bold;
+      font-size: 0.8rem;
+      color: $card-border;
     }
 
-    #info-meet {
-        @include flex(column, nowrap, space-between, center, center);
-        height: 30vw;
+    p {
+      font-size: 0.7rem;
+      text-align: center;
+      color: $card-border;
+      line-height: 0.9rem;
+    }
 
-        h4 {
-            margin-top: 1vh;
-            font-weight: bold;
-            font-size: 0.8rem;
-            color: $card-border;
+    #schedule-meet {
+      width: 100%;
+    }
+
+    #phone-meet {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  main {
+    padding-top: 5vw;
+    height: auto;
+    overflow: initial;
+
+    #top-meet {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    #bottom-meet {
+      position: relative;
+      padding-bottom: 10vw;
+      #address-meet {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        p {
+          margin-bottom: 0;
         }
+      }
+      #phone-meet{
 
-        p{
-            font-size:0.7rem;
-            text-align: center;
-            color: $card-border;
+          position: absolute;
+          bottom: 0;
+
+          p {
+            margin-bottom: 0;
+          }
+
+        }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  main {
+    #bottom-meet {
+      padding-bottom: 12vw;
+
+      #info-meet {
+        #address-meet {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+
+          p {
+            line-height: 0.6;
+            margin: 3px;
+          }
         }
 
         #schedule-meet {
-            width: 100%;
+          p {
+            line-height: 0.6;
+          }
         }
 
-        #phone-meet {
-            width: 100%;
-            
+        #phone-meet{
+
+          position: absolute;
+          bottom: 0;
+
+          p {
+            margin-bottom: 0;
+          }
+
         }
+      }
     }
-
-
+  }
 }

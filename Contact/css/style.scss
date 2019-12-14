@@ -1,70 +1,92 @@
 @import "../../mixins.scss";
 
 main {
-    @include flex (column, nowrap, flex-start, center, center);
+  @include flex(column, nowrap, flex-start, center, center);
+  color: $card-border;
+  overflow: initial;
+  height: auto;
+  padding-bottom: 10vh;
+
+  a {
+    text-decoration: none;
     color: $card-border;
-    overflow: initial;
-    height: auto;
-    padding-bottom: 10vh;
-
-    a {
-        text-decoration: none;
-        color: $card-border;
-    }
-
+  }
 }
 
 #top {
-    margin-top : 10vh;
-    width: 100%; 
+  margin-top: 10vh;
+  width: 100%;
 
-    h1 {
-       font-size: $large;
-       text-align: center;
-       margin-bottom: 0;
-       font-weight: 200;
-    }
+  h1 {
+    font-size: $large;
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 200;
+  }
 
-    .ornament {
-        border: 1px solid $card-border;
-        width: 70vw;
-        margin: 0 auto;
-        margin-top: 5vh;
-    }
+  .ornament {
+    border: 1px solid $card-border;
+    width: 70vw;
+    margin: 0 auto;
+    margin-top: 5vh;
+  }
 }
 
 #bottom-contact {
+  @include flex(row, nowrap, space-around, center, center);
+  margin-top: 5vh;
+  width: 100vw;
 
-    @include flex(row, nowrap, space-around, center, center);
-    margin-top: 5vh;
-    width: 100vw;
+  .container {
+    border: 1px solid $card-border;
+    width: 24vw;
+    height: 16vw;
+    @include flex(row, nowrap, center, center, center);
 
+    .box-contact {
+      background-color: $contact-bc;
+      height: 90%;
+      width: 90%;
+      border: 1px solid $card-border;
+      @include flex(column, nowrap, center, center, center);
+
+      .icon {
+        height: 40%;
+        width: 50%;
+
+        .svg-icon {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .box-contact {
+    p {
+      font-size: 1.2vw;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #top {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  #bottom-contact {
+    flex-direction: column;
 
     .container {
-        border: 1px solid $card-border;
-        width: 24vw;
-        height: 16vw;  
-        @include flex(row, nowrap, center, center, center);
-
-        .box-contact {
-            background-color: $contact-bc;
-            height: 90%;
-            width: 90%;
-            border: 1px solid $card-border;
-            @include flex(column, nowrap, center, center, center);
-
-            .icon {
-                height: 40%;
-                width: 50%;
-
-                .svg-icon{
-
-                    height: 100%;
-                    width: 100%;
-                }
-            }
-
-        }
+      margin-top: 5vw;
+      width: 40vw;
+      height: 26.6vw;
     }
-
+  }
 }

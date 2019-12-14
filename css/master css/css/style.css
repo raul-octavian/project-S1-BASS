@@ -42,8 +42,9 @@ main {
   align-content: center;
   width: 100vw;
   margin: 0 auto;
-  height: 80vh;
+  height: 70vh;
   position: relative;
+  padding-bottom: 2vw;
 }
 #container section {
   align-self: center;
@@ -285,6 +286,26 @@ svg {
   .container-visible-text .name h3 {
     font-size: 1rem;
     margin: 0.5vw;
+  }
+
+  .right-arrow, .left-arrow {
+    position: absolute;
+    bottom: 2vw;
+    width: 6vw;
+    height: 3vw;
+  }
+
+  .left-arrow {
+    left: 20vw;
+  }
+
+  .right-arrow {
+    right: 20vw;
+  }
+
+  .back-arrow {
+    width: 6vw;
+    height: 3vw;
   }
 }
 @media screen and (max-width: 760px) {

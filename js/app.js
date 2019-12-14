@@ -1,3 +1,14 @@
+
+// $(document).ready(function () {
+    $('#nav-icon-hamburger').click(function () {
+        $(this).toggleClass('open');
+        $("#nav-link-one").toggleClass("move-right");
+        $("#nav-link-two").toggleClass("move-right");
+    });
+// });
+
+
+
 $(".helmet-hover").mouseenter(
     function () {
         $("#svg-container-parts-active").addClass("visible");

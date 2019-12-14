@@ -34,6 +34,10 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
+header {
+  position: relative;
+}
+
 #nav {
   display: flex;
   flex-flow: row nowrap;
@@ -61,6 +65,7 @@ body {
 }
 #nav #logo #logo-icon {
   height: 18vh;
+  z-index: 5;
 }
 #nav #logo #logo-icon .cls-1 {
   fill: #020202;
@@ -189,6 +194,97 @@ body {
 }
 #nav ul #space-contact-icon .cls-2 {
   fill: none;
+}
+
+#hamburger {
+  padding-right: 3vw;
+  display: none;
+}
+
+#nav-icon-hamburger {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  margin: 50px auto;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon-hamburger span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 50%;
+  background: #bb6611;
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+#nav-icon-hamburger span:nth-child(even) {
+  left: 50%;
+  border-radius: 0 9px 9px 0;
+}
+
+#nav-icon-hamburger span:nth-child(odd) {
+  left: 0px;
+  border-radius: 9px 0 0 9px;
+}
+
+#nnav-icon-hamburger span:nth-child(1),
+#nav-icon-hamburger span:nth-child(2) {
+  top: 0px;
+}
+
+#nav-icon-hamburger span:nth-child(3),
+#nav-icon-hamburger span:nth-child(4) {
+  top: 18px;
+}
+
+#nav-icon-hamburger span:nth-child(5),
+#nav-icon-hamburger span:nth-child(6) {
+  top: 36px;
+}
+
+#nav-icon-hamburger.open span:nth-child(1),
+#nav-icon-hamburger.open span:nth-child(6) {
+  transform: rotate(45deg);
+}
+
+#nav-icon-hamburger.open span:nth-child(2),
+#nav-icon-hamburger.open span:nth-child(5) {
+  transform: rotate(-45deg);
+}
+
+#nav-icon-hamburger.open span:nth-child(1) {
+  left: 5px;
+  top: 7px;
+}
+
+#nav-icon-hamburger.open span:nth-child(2) {
+  left: calc(50% - 5px);
+  top: 7px;
+}
+
+#nav-icon-hamburger.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+
+#nav-icon-hamburger.open span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+
+#nav-icon-hamburger.open span:nth-child(5) {
+  left: 5px;
+  top: 29px;
+}
+
+#nav-icon-hamburger.open span:nth-child(6) {
+  left: calc(50% - 5px);
+  top: 29px;
 }
 
 main {
@@ -572,7 +668,7 @@ a {
 }
 
 footer {
-  background: url("../assets/background-1.png");
+  background: #112242;
   width: 100vw;
   z-index: 0;
   position: relative;
@@ -715,6 +811,62 @@ footer .footer-section-6 p {
   }
 }
 @media screen and (max-width: 760px) {
+  #nav {
+    height: 15vh;
+    justify-content: space-between;
+  }
+  #nav #logo {
+    order: -1;
+    width: 20vw;
+  }
+  #nav #logo #logo-icon {
+    height: 80%;
+  }
+  #nav #nav-link-one {
+    padding: calc(15vh + 3rem) 0 1rem 0;
+    height: calc(250px + 15vh);
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+  }
+  #nav #nav-link-two {
+    padding: 1rem 0 2rem 0;
+    height: 250px;
+    position: absolute;
+    top: calc(250px + 15vh);
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+  }
+  #nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    left: -20vw;
+    top: 0;
+    width: 20vw;
+    margin: 0;
+    background-color: #d6a1a144;
+    transition: 0.5s ease-in-out;
+    z-index: 3;
+  }
+  #nav ul .space-icons {
+    height: 4rem;
+  }
+
+  a li span {
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  .move-right {
+    transform: translateX(20vw);
+  }
+
   #desc {
     font-size: 2.3vw;
     padding: 0 10%;
@@ -779,7 +931,8 @@ footer .footer-section-6 p {
     width: 4vw;
   }
 
-  #fire, #firetwo {
+  #fire,
+#firetwo {
     top: 25vw;
   }
 
@@ -793,6 +946,10 @@ footer .footer-section-6 p {
   }
 }
 @media screen and (max-width: 576px) {
+  #hamburger {
+    padding-right: 5vw;
+  }
+
   #erik {
     width: 47vw;
   }
@@ -813,7 +970,8 @@ footer .footer-section-6 p {
     width: 7vw;
   }
 
-  #fire, #firetwo {
+  #fire,
+#firetwo {
     top: 42.5vw;
   }
 

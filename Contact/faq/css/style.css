@@ -120,4 +120,13 @@ main form input[type=submit] {
   margin: 1vh auto;
 }
 
+@media screen and (max-width: 960px) {
+  main {
+    padding-top: 5vw;
+  }
+  main #top-faq h1 {
+    font-size: 2rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

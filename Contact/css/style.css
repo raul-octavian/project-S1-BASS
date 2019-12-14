@@ -100,4 +100,25 @@ main a {
   width: 100%;
 }
 
+@media screen and (max-width: 960px) {
+  .box-contact p {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 760px) {
+  #top h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 660px) {
+  #bottom-contact {
+    flex-direction: column;
+  }
+  #bottom-contact .container {
+    margin-top: 5vw;
+    width: 40vw;
+    height: 26.6vw;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
