@@ -970,7 +970,14 @@ footer {
 @media screen and (max-width: 576px) {
   #hamburger {
     padding-right: 5vw; 
+  }
+  #nav {
+    ul {
+      .space-icons{
+        height: 3rem;
+      }
 
+    }
   }
 
 

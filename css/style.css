@@ -950,6 +950,10 @@ footer .footer-section-6 p {
     padding-right: 5vw;
   }
 
+  #nav ul .space-icons {
+    height: 3rem;
+  }
+
   #erik {
     width: 47vw;
   }

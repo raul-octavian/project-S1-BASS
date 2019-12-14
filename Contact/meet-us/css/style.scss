@@ -167,3 +167,24 @@ main {
     }
   }
 }
+
+
+@media screen and (max-width: 470px) {
+  main {
+    #bottom-meet {
+      padding-bottom: 20vw;
+
+      #info-meet {
+        #address-meet,  #phone-meet {
+
+          width: 45vw;
+
+          p{
+            line-height: 1.3em;
+          }
+        }
+      }
+    }
+
+  }
+}

@@ -174,5 +174,16 @@ main .ornament {
     margin-bottom: 0;
   }
 }
+@media screen and (max-width: 470px) {
+  main #bottom-meet {
+    padding-bottom: 20vw;
+  }
+  main #bottom-meet #info-meet #address-meet, main #bottom-meet #info-meet #phone-meet {
+    width: 45vw;
+  }
+  main #bottom-meet #info-meet #address-meet p, main #bottom-meet #info-meet #phone-meet p {
+    line-height: 1.3em;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
