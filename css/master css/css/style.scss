@@ -107,8 +107,6 @@ main {
   width: 15vw;
 }
 
-
-
 #card-left {
   animation: slide-in-br 1.5s 1;
 }
@@ -276,26 +274,25 @@ svg {
       }
     }
   }
-  .right-arrow, .left-arrow {
+  .right-arrow,
+  .left-arrow {
     position: absolute;
     bottom: 2vw;
     width: 6vw;
     height: 3vw;
-
   }
-    .left-arrow {
-
-      left: 20vw;
+  .left-arrow {
+    left: 20vw;
   }
 
-    .right-arrow {
-      right: 20vw;
-    }
+  .right-arrow {
+    right: 20vw;
+  }
 
-    .back-arrow {
-       width: 6vw;
+  .back-arrow {
+    width: 6vw;
     height: 3vw;
-    }
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -305,11 +302,10 @@ svg {
       margin: 0;
     }
   }
-   .container-visible-text {
-      p{
-        font-size: 1.8vw;
-
-   }
+  .container-visible-text {
+    p {
+      font-size: 1.8vw;
+    }
   }
 
   #text-suit {
@@ -324,10 +320,9 @@ svg {
     width: 28.9vw;
   }
   .svg-container-parts {
-
     justify-content: flex-start;
 
-    .text-container{
+    .text-container {
       height: 50%;
       h4 {
         font-size: 1.7vw;
@@ -336,34 +331,28 @@ svg {
         font-size: 1.6vw;
       }
     }
-
-
   }
-
-
 }
 
 @media screen and (max-width: 660px) {
-
   .name {
     h3 {
       font-size: 1.9vw;
     }
   }
 
-   .container-visible-text {
-      p{
-        font-size: 2vw;
-
-   }
+  .container-visible-text {
+    p {
+      font-size: 2vw;
+    }
   }
- 
+
   .card-suit {
     height: 52vw;
     width: 31.3vw;
   }
 
-    #text-suit {
+  #text-suit {
     position: absolute;
     top: 0;
     width: 60vw;
@@ -373,15 +362,13 @@ svg {
 }
 
 @media screen and (max-width: 576px) {
- 
   .card-suit {
     height: 60vw;
     width: 36.1vw;
   }
 
   .svg-container-parts {
-
-    .text-container{
+    .text-container {
       h4 {
         font-size: 2.2vw;
       }
@@ -389,8 +376,6 @@ svg {
         font-size: 2vw;
       }
     }
-
-
   }
 }
 
@@ -913,5 +898,142 @@ svg {
   }
   .cls-31 {
     fill: #e3e3e3;
+  }
+}
+
+//apolo sapce ship colors
+
+#apolo-11 {
+  .cls-1 {
+    fill: #b8b5a7;
+    stroke: #504f4e;
+  }
+
+  .cls-1,
+  .cls-13,
+  .cls-15 {
+    stroke-miterlimit: 10;
+  }
+
+  .cls-2 {
+    fill: #1d1d1b;
+  }
+
+  .cls-3 {
+    fill: #58637c;
+  }
+
+  .cls-4 {
+    fill: #a19d9a;
+  }
+
+  .cls-5 {
+    fill: #bdbabd;
+  }
+
+  .cls-6 {
+    fill: #b5aca0;
+  }
+
+  .cls-7 {
+    fill: #cbbdab;
+  }
+
+  .cls-8 {
+    fill: #e6d2a3;
+  }
+
+  .cls-9 {
+    fill: #919199;
+  }
+
+  .cls-10 {
+    fill: #3e3e3d;
+  }
+
+  .cls-11 {
+    fill: #987f6b;
+  }
+
+  .cls-12 {
+    fill: #a8a599;
+  }
+
+  .cls-13,
+  .cls-15 {
+    fill: none;
+  }
+
+  .cls-13 {
+    stroke: #873e1e;
+    stroke-width: 0.75px;
+  }
+
+  .cls-14 {
+    fill: #d1b186;
+  }
+
+  .cls-15 {
+    stroke: #d1b186;
+  }
+
+  .cls-16 {
+    fill: #989491;
+  }
+
+  .cls-17 {
+    fill: #a9a5a2;
+  }
+
+  .cls-18 {
+    fill: #4a5368;
+  }
+
+  .cls-19 {
+    fill: #fff;
+  }
+
+  .cls-20 {
+    fill: #58627b;
+  }
+
+  .cls-21 {
+    fill: #bcad87;
+  }
+
+  .cls-22 {
+    fill: #2b2827;
+  }
+
+  .cls-23 {
+    fill: #615144;
+  }
+
+  .cls-24 {
+    fill: #2b2b2a;
+  }
+
+  .cls-25 {
+    fill: #e0e0e0;
+  }
+
+  .cls-26 {
+    fill: #474746;
+  }
+
+  .cls-27 {
+    fill: #c9caca;
+  }
+
+  .cls-28 {
+    fill: #aca8a5;
+  }
+
+  .cls-29 {
+    fill: #bfb5a9;
+  }
+
+  .cls-30 {
+    fill: #bfbbad;
   }
 }
