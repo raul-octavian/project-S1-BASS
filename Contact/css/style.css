@@ -34,14 +34,14 @@ main {
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-  color: #FFEEDD;
+  color: #ffeedd;
   overflow: initial;
   height: auto;
   padding-bottom: 10vh;
 }
 main a {
   text-decoration: none;
-  color: #FFEEDD;
+  color: #ffeedd;
 }
 
 #top {
@@ -55,7 +55,7 @@ main a {
   font-weight: 200;
 }
 #top .ornament {
-  border: 1px solid #FFEEDD;
+  border: 1px solid #ffeedd;
   width: 70vw;
   margin: 0 auto;
   margin-top: 5vh;
@@ -71,7 +71,7 @@ main a {
   width: 100vw;
 }
 #bottom-contact .container {
-  border: 1px solid #FFEEDD;
+  border: 1px solid #ffeedd;
   width: 24vw;
   height: 16vw;
   display: flex;
@@ -81,10 +81,10 @@ main a {
   align-content: center;
 }
 #bottom-contact .container .box-contact {
-  background-color: #79246C;
+  background-color: #79246c;
   height: 90%;
   width: 90%;
-  border: 1px solid #FFEEDD;
+  border: 1px solid #ffeedd;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;

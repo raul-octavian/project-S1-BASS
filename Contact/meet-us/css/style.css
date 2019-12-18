@@ -70,12 +70,12 @@ main #top-meet h1 {
   font-size: 4rem;
   font-weight: 200;
   text-align: center;
-  color: #FFEEDD;
+  color: #ffeedd;
   width: 90%;
   margin: 0 auto;
 }
 main .ornament {
-  border: 1px solid #FFEEDD;
+  border: 1px solid #ffeedd;
   width: 70vw;
   margin: 0 auto;
   margin-top: 5vh;
@@ -106,12 +106,12 @@ main .ornament {
   margin-top: 1vh;
   font-weight: bold;
   font-size: 0.8rem;
-  color: #FFEEDD;
+  color: #ffeedd;
 }
 #bottom-meet #info-meet p {
   font-size: 0.7rem;
   text-align: center;
-  color: #FFEEDD;
+  color: #ffeedd;
   line-height: 0.9rem;
 }
 #bottom-meet #info-meet #schedule-meet {

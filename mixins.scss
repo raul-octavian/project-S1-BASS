@@ -26,7 +26,7 @@ $large: 4rem;
 }
 
 @mixin card-border {
-  border: 5px solid $card-border;
+  border: 5px solid $primary;
 }
 
 @keyframes slide-in-br {

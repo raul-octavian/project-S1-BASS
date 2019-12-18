@@ -61,12 +61,12 @@ main #top-email h1 {
   font-size: 4rem;
   font-weight: 200;
   text-align: center;
-  color: #FFEEDD;
+  color: #ffeedd;
   width: 90%;
   margin: 0 auto;
 }
 main .ornament {
-  border: 1px solid #FFEEDD;
+  border: 1px solid #ffeedd;
   width: 70vw;
   margin: 0 auto;
   margin-top: 5vh;
@@ -94,20 +94,20 @@ main form textarea {
   resize: vertical;
   box-sizing: border-box;
   padding: 5px 10px;
-  border: 1px solid #D6A1A1;
+  border: 1px solid #d6a1a1;
   outline: none;
 }
 main form input[type=text]:focus,
 main form input[type=email]:focus,
 main form textarea:focus {
-  box-shadow: 0 0 2px #79246C;
+  box-shadow: 0 0 2px #79246c;
   padding: 5px 0px 5px 5px;
   margin: 5px 1px 3px 0px;
-  border: 2px solid #79246C;
+  border: 2px solid #79246c;
 }
 main form label {
   flex-grow: 1;
-  color: #FFEEDD;
+  color: #ffeedd;
   text-align: right;
   padding-right: 1vw;
 }
@@ -115,7 +115,7 @@ main form textarea {
   height: 15vh;
 }
 main form input[type=submit] {
-  background-color: #FFEEDD;
+  background-color: #ffeedd;
   columns: #bb6611;
   padding: 1vh 3vw;
   border: none;
