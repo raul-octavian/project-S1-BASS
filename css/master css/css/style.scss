@@ -109,6 +109,7 @@ main {
 
 #card-left {
   animation: slide-in-br 1.5s 1;
+  padding-top: 3vw;
 }
 
 svg {
@@ -379,7 +380,7 @@ svg {
   }
 }
 
-// mercury suit color classes
+// suit-1 page
 
 .mercury-space-suit {
   width: 70%;
@@ -763,7 +764,454 @@ svg {
   }
 }
 
-// mercury spaceship color clases
+// suit-2 page
+
+#apollo-suit {
+  height: 100%;
+  width: 100%;
+
+  .cls-1,
+  .cls-2,
+  .cls-21,
+  .cls-24,
+  .cls-25 {
+    fill: none;
+  }
+
+  .cls-2 {
+    stroke: #1d1d1b;
+  }
+
+  .cls-2,
+  .cls-21,
+  .cls-24,
+  .cls-25 {
+    stroke-miterlimit: 10;
+  }
+
+  .cls-3 {
+    fill: #fafafa;
+  }
+
+  .cls-4 {
+    fill: #e53738;
+  }
+
+  .cls-5 {
+    fill: #185694;
+  }
+
+  .cls-6 {
+    fill: #aa875d;
+  }
+
+  .cls-7 {
+    fill: #cdcccc;
+  }
+
+  .cls-8 {
+    fill: #a8a7a7;
+  }
+
+  .cls-9 {
+    fill: #1d1d1b;
+  }
+
+  .cls-10 {
+    fill: #144872;
+  }
+
+  .cls-11 {
+    fill: #e2e2e1;
+  }
+
+  .cls-12 {
+    fill: #891f27;
+  }
+
+  .cls-13 {
+    fill: #444;
+  }
+
+  .cls-14 {
+    fill: #696969;
+  }
+
+  .cls-15 {
+    fill: #262626;
+  }
+
+  .cls-16 {
+    fill: #1e1e1e;
+  }
+
+  .cls-17 {
+    fill: #777676;
+  }
+
+  .cls-18 {
+    fill: #929191;
+  }
+
+  .cls-19 {
+    opacity: 0.42;
+  }
+
+  .cls-20,
+  .cls-21 {
+    opacity: 0.33;
+  }
+
+  .cls-21 {
+    stroke: #000;
+  }
+
+  .cls-22 {
+    opacity: 0.21;
+  }
+
+  .cls-23 {
+    fill: #028cca;
+  }
+
+  .cls-24 {
+    stroke: #aa875d;
+  }
+
+  .cls-25 {
+    stroke: #929191;
+  }
+
+  .cls-26 {
+    isolation: isolate;
+  }
+
+  .cls-27 {
+    clip-path: url(#clip-path);
+  }
+
+  .cls-28 {
+    fill: #121212;
+  }
+
+  .cls-29 {
+    fill: #1a1a1a;
+  }
+
+  .cls-30 {
+    fill: #202020;
+  }
+
+  .cls-31 {
+    fill: #252525;
+  }
+
+  .cls-32 {
+    fill: #292929;
+  }
+
+  .cls-33 {
+    fill: #2d2d2d;
+  }
+
+  .cls-34 {
+    fill: #313131;
+  }
+
+  .cls-35 {
+    fill: #343434;
+  }
+
+  .cls-36 {
+    fill: #373737;
+  }
+
+  .cls-37 {
+    fill: #3a3a3a;
+  }
+
+  .cls-38 {
+    fill: #3d3d3d;
+  }
+
+  .cls-39 {
+    fill: #404040;
+  }
+
+  .cls-40 {
+    fill: #424242;
+  }
+
+  .cls-41 {
+    fill: #454545;
+  }
+
+  .cls-42 {
+    fill: #474747;
+  }
+
+  .cls-43 {
+    clip-path: url(#clip-path-2);
+  }
+
+  .cls-44 {
+    clip-path: url(#clip-path-3);
+  }
+
+  .cls-45 {
+    fill: #494949;
+  }
+
+  .cls-46 {
+    fill: #4c4c4c;
+  }
+
+  .cls-47 {
+    fill: #4e4e4e;
+  }
+
+  .cls-48 {
+    fill: #505050;
+  }
+
+  .cls-49 {
+    clip-path: url(#clip-path-4);
+  }
+}
+
+// suit-3 page
+
+#orange-suit {
+  height: 100%;
+  width: 100%;
+
+  .cls-1,
+  .cls-10,
+  .cls-11,
+  .cls-12,
+  .cls-13,
+  .cls-19,
+  .cls-20 {
+    fill: none;
+  }
+
+  .cls-2 {
+    fill: #ea5917;
+  }
+
+  .cls-3 {
+    fill: #5c5c5c;
+  }
+
+  .cls-4 {
+    fill: #7a7a7a;
+  }
+
+  .cls-5 {
+    fill: #ce4c19;
+  }
+
+  .cls-6 {
+    fill: #fff;
+  }
+
+  .cls-7 {
+    fill: #1d1d1b;
+  }
+
+  .cls-8 {
+    fill: #a5a3a3;
+  }
+
+  .cls-16,
+  .cls-9 {
+    fill: #898888;
+  }
+
+  .cls-10 {
+    stroke: #ce4c19;
+  }
+
+  .cls-10,
+  .cls-11,
+  .cls-12,
+  .cls-13,
+  .cls-16,
+  .cls-19,
+  .cls-20 {
+    stroke-miterlimit: 10;
+  }
+
+  .cls-11 {
+    stroke: #000;
+  }
+
+  .cls-12 {
+    stroke: #a5a3a3;
+  }
+
+  .cls-13,
+  .cls-16 {
+    stroke: #bfbebe;
+    stroke-width: 3px;
+  }
+
+  .cls-14 {
+    clip-path: url(#clip-path);
+  }
+
+  .cls-15 {
+    clip-path: url(#clip-path-2);
+  }
+
+  .cls-17 {
+    fill: #616160;
+  }
+
+  .cls-18 {
+    fill: url(#radial-gradient);
+  }
+
+  .cls-19 {
+    stroke: #969596;
+    stroke-width: 0.75px;
+  }
+
+  .cls-20 {
+    stroke: #333;
+  }
+ 
+}
+
+// suit-4 page
+
+#emu-space-suit {
+  height: 100%;
+  width: 100%;
+  .cls-1 {
+    fill: #e41213;
+  }
+
+  .cls-2 {
+    fill: #e8e8e8;
+  }
+
+  .cls-3 {
+    fill: #f8f7f7;
+  }
+
+  .cls-4 {
+    fill: #346fb6;
+  }
+
+  .cls-5 {
+    fill: #fbf6e7;
+  }
+
+  .cls-6 {
+    fill: #eaeaea;
+  }
+
+  .cls-7 {
+    fill: #efefef;
+  }
+
+  .cls-8 {
+    fill: #d7d7d7;
+  }
+
+  .cls-9 {
+    fill: #1d1d1b;
+  }
+
+  .cls-10,
+  .cls-11,
+  .cls-12 {
+    fill: none;
+    stroke-miterlimit: 10;
+  }
+
+  .cls-10 {
+    stroke: #d7d8d7;
+  }
+
+  .cls-11 {
+    stroke: #000;
+    opacity: 0.5;
+  }
+
+  .cls-12 {
+    stroke: #a0a09f;
+    stroke-width: 0.25px;
+  }
+
+  .cls-13 {
+    fill: #a0a09f;
+  }
+
+  .cls-14 {
+    fill: #a8a8aa;
+  }
+
+  .cls-15 {
+    fill: #def0f9;
+  }
+
+  .cls-16 {
+    fill: #cdac83;
+  }
+
+  .cls-17 {
+    fill: #5a5a5a;
+  }
+
+  .cls-18 {
+    fill: #fff;
+  }
+
+  .cls-19 {
+    fill: #ccbdac;
+  }
+
+  .cls-20 {
+    fill: url(#radial-gradient);
+  }
+
+  .cls-21 {
+    fill: url(#radial-gradient-2);
+  }
+
+  .cls-22 {
+    fill: url(#radial-gradient-3);
+  }
+
+  .cls-23 {
+    fill: url(#radial-gradient-4);
+  }
+
+  .cls-24 {
+    fill: url(#radial-gradient-5);
+  }
+
+  .cls-25 {
+    fill: #d7d8d7;
+  }
+
+  .cls-26 {
+    fill: #d8d8d8;
+  }
+
+  .cls-27 {
+    opacity: 0.51;
+  }
+
+  .cls-28 {
+    fill: #9e8455;
+  }
+
+}
+
+// ship-1 page
 
 .friendship-mercury {
   height: 80%;
@@ -901,9 +1349,11 @@ svg {
   }
 }
 
-//apolo sapce ship colors
+//ship-2 page
 
 #apolo-11 {
+  width: 100%;
+  height: 100%;
   .cls-1 {
     fill: #b8b5a7;
     stroke: #504f4e;
@@ -1035,5 +1485,258 @@ svg {
 
   .cls-30 {
     fill: #bfbbad;
+  }
+
+
+
+}
+
+//ship-3 page
+
+#iss-missions {
+  height: 100%;
+  width: 100%;
+
+  .cls-1,
+  .cls-2 {
+    fill: #515250;
+  }
+
+  .cls-1 {
+    stroke: #686867;
+  }
+
+  .cls-1,
+  .cls-17,
+  .cls-18,
+  .cls-3,
+  .cls-4,
+  .cls-5,
+  .cls-6,
+  .cls-8 {
+    stroke-miterlimit: 10;
+  }
+
+  .cls-17,
+  .cls-18,
+  .cls-3,
+  .cls-4 {
+    fill: none;
+  }
+
+  .cls-3 {
+    stroke: #701f0b;
+  }
+
+  .cls-4 {
+    stroke: #72675d;
+  }
+
+  .cls-5 {
+    fill: #892613;
+    stroke: #555454;
+  }
+
+  .cls-6 {
+    fill: #c5ccca;
+    stroke: #6d6d6c;
+  }
+
+  .cls-7 {
+    fill: #1d1d1b;
+  }
+
+  .cls-8 {
+    fill: #cbc9c8;
+    stroke: #5c5c5b;
+  }
+
+  .cls-9 {
+    fill: #777776;
+  }
+
+  .cls-10 {
+    fill: #601a05;
+  }
+
+  .cls-11 {
+    fill: #4a4a49;
+  }
+
+  .cls-12 {
+    fill: #b2b2b2;
+  }
+
+  .cls-13 {
+    fill: #949494;
+  }
+
+  .cls-14 {
+    fill: #8e8e8d;
+  }
+
+  .cls-15 {
+    fill: #701f0b;
+  }
+
+  .cls-16 {
+    fill: #aaaaa9;
+  }
+
+  .cls-17 {
+    stroke: #892613;
+  }
+
+  .cls-18 {
+    stroke: #aaaaa9;
+    stroke-width: 4px;
+  }
+   
+}
+
+// ship-4 page
+
+#iss-missions-2 {
+  height: 100%;
+  width: 100%;
+
+  .cls-1 {
+    fill: #7b7c77;
+  }
+
+  .cls-1,
+  .cls-2,
+  .cls-21,
+  .cls-3,
+  .cls-5 {
+    stroke: #5f615c;
+  }
+
+  .cls-1,
+  .cls-11,
+  .cls-12,
+  .cls-13,
+  .cls-14,
+  .cls-15,
+  .cls-2,
+  .cls-21,
+  .cls-22,
+  .cls-26,
+  .cls-3,
+  .cls-4,
+  .cls-5,
+  .cls-7 {
+    stroke-miterlimit: 10;
+  }
+
+  .cls-2 {
+    fill: #424340;
+  }
+
+  .cls-22,
+  .cls-3,
+  .cls-7,
+  .cls-9 {
+    fill: #fff;
+  }
+
+  .cls-12,
+  .cls-13,
+  .cls-14,
+  .cls-15,
+  .cls-26,
+  .cls-4 {
+    fill: none;
+  }
+
+  .cls-4 {
+    stroke: #6f6c6d;
+  }
+
+  .cls-5 {
+    fill: #60625e;
+  }
+
+  .cls-21,
+  .cls-6 {
+    fill: #1d1d1b;
+  }
+
+  .cls-7 {
+    stroke: #1d1d1b;
+  }
+
+  .cls-8 {
+    fill: #4a4a49;
+  }
+
+  .cls-10 {
+    fill: #898b85;
+  }
+
+  .cls-11 {
+    fill: #696a66;
+    stroke: #5c5d59;
+  }
+
+  .cls-12 {
+    stroke: #5a5c57;
+  }
+
+  .cls-13 {
+    stroke: #696a65;
+  }
+
+  .cls-14 {
+    stroke: #3d3d3d;
+  }
+
+  .cls-14,
+  .cls-15 {
+    stroke-width: 0.25px;
+  }
+
+  .cls-15 {
+    stroke: #5b5b5c;
+  }
+
+  .cls-16 {
+    fill: #3d3d3d;
+  }
+
+  .cls-17 {
+    fill: #c6c6c6;
+  }
+
+  .cls-18 {
+    fill: #21211f;
+  }
+
+  .cls-19 {
+    fill: #5f615c;
+  }
+
+  .cls-20 {
+    opacity: 0.22;
+  }
+
+  .cls-22 {
+    stroke: #91948d;
+  }
+
+  .cls-23 {
+    fill: #ccc;
+  }
+
+  .cls-24 {
+    fill: #e8e8e6;
+  }
+
+  .cls-25 {
+    opacity: 0.14;
+  }
+
+  .cls-26 {
+    stroke: #383c52;
   }
 }
