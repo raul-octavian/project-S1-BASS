@@ -673,7 +673,7 @@ footer {
   width: 100vw;
   z-index: 0;
   position: relative;
-  color: $card-border;
+  color: $primary;
   text-align: center;
   border-top: solid 2px #fff3b8;
   padding-bottom: 2vw;
@@ -683,10 +683,10 @@ footer {
 
     &:visited,
     &:active {
-      color: $card-border;
+      color: $primary;
     }
     .instagaram-button {
-      background-color: $card-bc;
+      background-color: $secondary;
       height: 6vw;
       padding: 2vw;
       box-sizing: border-box;
@@ -747,12 +747,12 @@ footer {
         resize: vertical;
         box-sizing: border-box;
         padding: 5px 10px;
-        border: 1px solid $card-bc;
+        border: 1px solid $secondary;
         border-radius: 1vw;
         margin: 5px 1px 3px 0px;
         outline: none;
         background-color: transparent;
-        color: $card-border;
+        color: $primary;
       }
 
       input[type="text"]:focus,

@@ -1,37 +1,32 @@
+$primary: #ffeedd;
+$secondary: #d6a1a1;
 
-$card-bc: #D6A1A1;
-$card-border: #FFEEDD;
 $footer-bc: #112242;
 $btn-bc: #bb6611;
-$contact-bc: #79246C;
+$contact-bc: #79246c;
 
-
-//font  
+//font
 
 $large: 4rem;
 
-
-@mixin flex ($direction, $whrap, $justify-content, $align-items, $align-content) {
-
-    display: flex;
-    flex-flow: $direction $whrap;
-    justify-content: $justify-content;
-    align-items: $align-items;
-    align-content: $align-content;
-    
+@mixin flex($direction, $whrap, $justify-content, $align-items, $align-content) {
+  display: flex;
+  flex-flow: $direction $whrap;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  align-content: $align-content;
 }
 
-
 @mixin no-decoration-ul($none) {
-    list-style-type: $none;
+  list-style-type: $none;
 }
 
 @mixin no-decoration($none) {
-    text-decoration: $none;
+  text-decoration: $none;
 }
 
 @mixin card-border {
-    border: 5px solid $card-border; 
+  border: 5px solid $card-border;
 }
 
 @keyframes slide-in-br {
@@ -66,5 +61,3 @@ $large: 4rem;
     opacity: 1;
   }
 }
-
-

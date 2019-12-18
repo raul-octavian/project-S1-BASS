@@ -1,0 +1,20 @@
+@import "../../mixins.scss";
+
+#container-galerry-top {
+  width: 100vw;
+  img {
+    width: 100%;
+  }
+  #names {
+    @include flex(row, nowrap, space-around, center, center);
+    padding-left: 10%;
+
+    h2 {
+      color: $card-border;
+      flex-grow: 1;
+    }
+    h2:nth-child(3) {
+      flex-grow: 2;
+    }
+  }
+}

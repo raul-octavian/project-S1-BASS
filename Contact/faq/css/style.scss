@@ -32,14 +32,14 @@ main {
       font-size: $large;
       font-weight: 200;
       text-align: center;
-      color: $card-border;
+      color: $primary;
       width: 90%;
       margin: 0 auto;
     }
   }
 
   .ornament {
-    border: 1px solid $card-border;
+    border: 1px solid $primary;
     width: 70vw;
     margin: 0 auto;
     margin-top: 5vh;
@@ -51,7 +51,7 @@ main {
 
     h2 {
         margin-top: 5vh;
-        color: $card-border;
+        color: $primary;
         
     }
   }
@@ -68,7 +68,7 @@ main {
       width: 60%;
       box-sizing: border-box;
       padding: 10px 10px;
-      border: 1px solid $card-bc;
+      border: 1px solid $secondary;
       border-radius: 2vh;
       margin: 2vh;
       outline: none;
@@ -83,7 +83,7 @@ main {
     }
 
     input[type="submit"] {
-      background-color: $card-border;
+      background-color: $primary;
       columns: $btn-bc;
       padding: 1vh 3vw;
       border: none;

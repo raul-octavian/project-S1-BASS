@@ -66,7 +66,7 @@ main {
 
   h2 {
     margin-top: 0;
-    color: $card-border;
+    color: $primary;
   }
 
   article {
@@ -90,7 +90,7 @@ main {
 .card {
   @include flex(row, nowrap, space-between, flex-start, space-between);
 
-  background-color: $card-bc;
+  background-color: $secondary;
   @include card-border;
   border-radius: 3vw;
   padding: 1vw;

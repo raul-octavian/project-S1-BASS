@@ -35,7 +35,7 @@ main {
 
 .back-arrow {
   clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
-  background-color: $card-bc;
+  background-color: $secondary;
   height: 1.5vw;
   width: 3vw;
 
@@ -46,7 +46,7 @@ main {
 
 .right-arrow {
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-  background-color: $card-bc;
+  background-color: $secondary;
   height: 1.5vw;
   width: 3vw;
   align-self: center;
@@ -62,7 +62,7 @@ main {
 
 .left-arrow {
   clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-  background-color: $card-bc;
+  background-color: $secondary;
   height: 1.5vw;
   width: 3vw;
 
@@ -85,7 +85,7 @@ main {
 }
 
 .card-botton {
-  background-color: $card-border;
+  background-color: $primary;
   border-radius: 2vw;
   width: 100%;
 
@@ -103,7 +103,7 @@ main {
 }
 
 #text-suit {
-  color: $card-border;
+  color: $primary;
   width: 15vw;
 }
 
@@ -192,7 +192,7 @@ svg {
     width: 100%;
 
     h3 {
-      color: $card-border;
+      color: $primary;
       text-align: center;
       text-transform: uppercase;
     }
@@ -201,19 +201,19 @@ svg {
   .text-container {
     width: 90%;
     margin: 2% auto;
-    border: 1px solid $card-bc;
+    border: 1px solid $secondary;
     border-radius: 1vw;
     overflow: hidden;
 
     h4 {
-      color: $card-border;
+      color: $primary;
       font-size: 1.5vw;
       margin: 0.3vw;
       text-decoration: underline;
     }
 
     p {
-      color: $card-border;
+      color: $primary;
       text-align: left;
       padding: 0.2vw;
       margin: 0.3vw;
@@ -226,12 +226,12 @@ svg {
   text-align: left;
   width: 90%;
   margin: 2% auto;
-  border: 1px solid $card-bc;
+  border: 1px solid $secondary;
   border-radius: 1vw;
   overflow: hidden;
 
   p {
-    color: $card-border;
+    color: $primary;
     text-align: left;
     padding: 0.2vw;
     margin: 0.3vw;

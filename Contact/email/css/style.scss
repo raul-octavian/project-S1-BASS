@@ -33,14 +33,14 @@ main {
       font-size: $large;
       font-weight: 200;
       text-align: center;
-      color: $card-border;
+      color: $primary;
       width: 90%;
       margin: 0 auto;
     }
   }
 
   .ornament {
-    border: 1px solid $card-border;
+    border: 1px solid $primary;
     width: 70vw;
     margin: 0 auto;
     margin-top: 5vh;
@@ -67,7 +67,7 @@ main {
       resize: vertical;
       box-sizing: border-box;
       padding: 5px 10px;
-      border: 1px solid $card-bc;
+      border: 1px solid $secondary;
       outline: none;
     }
 
@@ -82,7 +82,7 @@ main {
 
     label {
       flex-grow: 1;
-      color: $card-border;
+      color: $primary;
       text-align: right;
       padding-right: 1vw;
     }
@@ -92,7 +92,7 @@ main {
     }
 
     input[type="submit"] {
-      background-color: $card-border;
+      background-color: $primary;
       columns: $btn-bc;
       padding: 1vh 3vw;
       border: none;
